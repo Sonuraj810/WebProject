@@ -1,6 +1,14 @@
 <html>
 	<head>
 		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css"/>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Ephesis&family=Marhey:wght@300&family=Titillium+Web:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ephesis&family=Indie+Flower&family=Marhey:wght@300&family=Titillium+Web:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
 		<style type="text/css">
 			body{
 				margin:0;
@@ -10,15 +18,15 @@
 			iframe{
 				border:none;
 			}
-					
-						@keyframes are{
-							0%{
-								
-							}
-							100%{
-							background:#A92D2F;
-							}
-						}
+			
+			#rmenu{
+				position:fixed;
+				right:0;
+				top:150px;
+				background:red;
+				width:50px;
+				height:150px;
+			}
 
 			#mainarea{
 				width:1500px;
@@ -29,6 +37,7 @@
 				width:1500px;
 				height:115px;
 				float:left;
+				background:white;
 			}
 				#logo{
 					width:390px;
@@ -40,7 +49,6 @@
 						width:100px;
 						height:100px;
 						float:left;
-						background:white;
 						margin:7px 10px;
 						overflow:hidden;
 
@@ -58,7 +66,8 @@
 					#logo2{
 						width:260px;
 						height:100px;
-						color:#002147;
+						color:#F80F60;
+						text-shadow: 5px 1px 3px rgba(0,0,0,0.5);
 						font:bold 35px arial;
 						float:left;
 						margin:0;
@@ -88,9 +97,10 @@
 						}
 
 					#contact ul li a:link,#contact ul li a:visited{
-						color:#12BA80;
+						color:#002147;
 						font :normal 13px arial;
 						text-decoration:none;
+						text-align:center;
 						}
 					#contact ul li a:hover{
 						color:#099FA4;
@@ -116,16 +126,17 @@
 					#title ul li a:link,#title ul li a:visited{
 						font:bold 10px arial;
 						text-decoration:none;
-						background:#A92D2F;
+						background:#002147;
 						color:white;
-						padding:10px;
+						padding:15px;
 						display:block;
 						border-radius:15px;
+						border:solid 2px #002147;
 					}
 					#title ul li a:hover{
 						background:white;
-						color:#A92D2F;
-						border:solid 2px #A92D2F;
+						color:#002147;
+						border:solid 2px #002147;
 					}
 
 			#m1{
@@ -133,6 +144,9 @@
 				height:55px;
 				background:black;
 				float:left;
+						position:sticky;
+						top:0;
+						z-index:1000;
 			}
 				#menuarea1{
 					width:850px;
@@ -165,6 +179,7 @@
 				width:1500px;
 				height:55px;
 				float:left;
+				background:white;
 			}
 				#menuarea2{
 					width:1000px;
@@ -189,7 +204,7 @@
 						display:block;
 					}
 					#menuarea2 ul li a:hover{
-						background:#A92D2F;
+						background:#002147;
 						border-radius:10px;
 						color:white;
 					}
@@ -270,10 +285,10 @@
 				}				
 					#p1a{
 						width:575px;
-						height:1px;
+						height:1.5px;
 						float:left;
 						margin:25px 0 25px 25px;
-						background:#A92D2F;
+						background:linear-gradient(to right,transparent 0%,#002147 );
 					}
 
 					#p1b{
@@ -284,14 +299,14 @@
 						#p1b h1{
 							font:normal 40px arial;
 							margin:5px;
-							color:#A92D2F;
+							color:#002147;
 						}
 					#p1c{
 						width:575px;
 						height:1.5px;
 						float:left;
 						margin:25px 25px 25px 0;
-						background:#A92D2F;
+						background:linear-gradient(to left,transparent 0%,#002147 );
 					}
 
 					#p11{
@@ -321,34 +336,33 @@
 					}
 					#p2 ul li a:link,#p2 ul li a:visited{
 						text-decoration:none;
-						color:#A92D2F;
+						color:#002147;
 						background:white;
 						padding: 15px ;
 						font:bold 15px arial;
 						border-radius:10px;
-						border:solid #A92D2F 3px;
+						border:solid #002147 3px;
 						display:block;
 					}
 					#p2 ul li a:hover{
 						color:white;
-						background:#A92D2F;
+						background:#002147;
 					}
 				#p3{
 					width:1500px;
 					height:500px;
 					margin:10px;
 					float:left;
-					background:white;
 				}
 			#facilityarea{
 				width:1500px;
-				height:900px;
+				height:800px;
 				float:left;
+				background:#F8F7F5;
 			}
 				#farea1{
 					width:1500px;
 					height:60px;
-					background:white;
 					float:left;
 					margin:25px 0;
 				}
@@ -357,37 +371,37 @@
 						height:1.5px;
 						float:left;
 						margin:30px 0 25px 25px;
-						background:#A92D2F;
+						background:linear-gradient(to right,transparent 0%,#002147 );
 					}
 					#farea1b{
 						width:300px;
 						height:60px;
-						background:white;
 						float:left;
 					}
 						#farea1b h1{
 							font:normal 40px arial;
 							margin:10px;
-							color:#A92D2F;
+							color:#002147;
 						}
 					#farea1c{
 						width:575px;
 						height:1.5px;
 						float:left;
 						margin:30px 25px 25px 0;
-						background:#A92D2F;
+						background:linear-gradient(to left,transparent 0%,#002147 );
 					}
-				#farea2{
+				.farea2{
 					width:1300px;
 					height:300px;
 					float:left;
 					margin:20px 100px;
 				}
 
-					.farea2{
+					.farea21{
 						width:300px;
 						height:280px;
 						float:left;
+						background:white;
 						margin:10px 12.5px;
 						box-shadow: 0px 5px 4px 1px rgba(198,198,198,1);
 					}	
@@ -422,117 +436,184 @@
 							.word h1 a:hover{
 								color:#AB0530;
 							}
-				
-				#farea3{
-					width:1300px;
+			#extraarea{
+				width:1500px;
+				height:800px;
+				float:left;
+			}
+				#extraarea1{
+					width:1500px;
 					height:60px;
-					background:white;
 					float:left;
-					margin:25px 100px;
+					margin:50px 0px;
 				}
-					#farea3 h1{
+					#extraarea1a{
+						width:350px;
+						height:1.5px;
+						float:left;
+						margin:30px 0 25px 25px;
+						background:linear-gradient(to right,transparent 0%,#002147 );
+					}
+					#extraarea1b{
+						width:750px;
+						height:60px;
+						float:left;
+					}
+					#extraarea1b h1{
 						font:normal 30px arial;
 						margin:15px;
-						color:#A92D2F;
+						color:#002147;
 					}
-				#farea4{
-					width:1500px;
+					#extraarea1c{
+						width:350px;
+						height:1.5px;
+						float:left;
+						margin:30px 25px 25px 0;
+						background:linear-gradient(to left,transparent 0%,#002147 );
+					}
+				.extraarea2{
+					width:1100px;
 					height:250px;
 					float:left;
-					margin:20px 0;
+					margin:20px 200px;
 				}
-					.farea4{
-						width:325px;
-						height:215px;
+					.extra1{
+						width:300px;
+						height:200px;
 						float:left;
-						margin:17.5px 25px;
+						margin:25px 0 25px 50px;
 						box-shadow: 0px 5px 4px 1px rgba(198,198,198,1);
+						position:relative;
 						overflow:hidden;
 					}
 						
-						.farea4 img{
+						.extra1 img{
 							height:100%;
 							width:100%;
-							transition:transform 3s 0s ease;
+							transition:all 3s;
 						}
-						.farea4 img:hover{
+							.edetails{
+								position:absolute;
+								bottom:0px;
+								width:100%;
+								padding:5px 0;
+								color:lime;
+								text-align:center;
+								font:normal 20px arial;
+								background:rgba(50, 79, 131, 0.5);
+								display:block;
+								transition:all 1s;
+							}
+				
+							.extra1:hover .edetails{
+								display:block;
+								color:green;
+								bottom:100;
+							}
+						.extra1 img:hover{
 							transform:scale(1.1,1.1);
 						}	
 			#activityarea{
 				width:1500px;
 				height:600px;
-				background:yellow;
+				background:#F8F7F5;
 				float:left;
 			}
 				#activity1{
 					width:1500px;
 					height:60px;
-					background:#12996A;
-					float:left;
+					float:left
 					margin:10px 0;
 				}
 					#activity1a{
 						width:575px;
-						height:1.5px;
+						height:2px;
 						float:left;
 						margin:30px 0 25px 25px;
-						background:#A92D2F;
+						background:linear-gradient(to right,transparent 0%,#002147 );
 					}
 					#activity1b{
 						width:300px;
 						height:60px;
-						background:white;
 						float:left;
 					}
 						#activity1b h1{
 							font:normal 40px arial;
-							color:#A92D2F;
+							color:#002147;
 							margin:10px;
 						}
 					#activity1c{
 						width:575px;
-						height:1.5px;
+						height:2px;
 						float:left;
 						margin:30px 25px 25px 0;
-						background:#A92D2F;
+						background:linear-gradient(to left,transparent 0%,#002147 );
 					}
 				#activity2{
 					width:1450px;
-					height:500px;
-					background:skyblue;
+					height:490px;
 					float:left;
-					margin:10px 25px;
+					margin:40px 25px;
 				}
 					.active{
 						width:450px;
 						height:250px;
-						background:pink;
 						float:left;
-						margin:50px 16px;	
+						margin:50px 16px;
+						position:relative;
+							
 					}
-
+						
 						.imgactivity{
 							width:225px;
 							height:250px;
-							background:lime;
 							float:left;
+							overflow:hidden;
 						}
 							.imgactivity img{
 								height:100%;
 								width:100%;
 							}
+							
+							.imgactivity img{
+								height:100%;
+								width:100%;
+								transition:transform 3s;
+							}
+							.imgactivity img:hover{
+								transform:scale(1.1,1.1);
+							}
 						.textactivity{
 							width:225px;
 							height:250px;
-							background:red;
+							background:#B1A299;
 							float:left;
 						}
+							.textactivity h3{
+								font:normal 20px arial;
+								margin:40px 0 0 25px;
+							}
+							.textactivity p{
+								font:normal 15px arial;
+								margin:40px 0 40 65px;
+							}
+							.textactivity a:link,.textactivity a:visited{
+   								font:bold 15px arial;
+								margin:0 0 0 55px;
+								text-decoration:none;
+								color:#002147;
+
+							}
 						.topactivity{
-							width:230px;
-							height:35px;
-							background:#192F59;
-							float:left;
-							margin:-17px 100px;
+							position:absolute;
+							top:-23px;
+							width:225px;
+							margin-left:100px;
+							text-align:center;
+							padding:4px 0;
+							color:white;
+							display:block;
+							transition:all 2s;
 						}
 							.topactivity p{
 									text-decoration:none;
@@ -544,61 +625,59 @@
 							.topactivity a:link,.topactivity a:visited{
 									text-decoration:none;
 									font:normal 13px arial;
-									background:#192F59;
+									background:#002147;
 									color:white;
 									display:block;
 									padding:10px 35px;
 							}
 		
-					#actarea {
-						width:200px;
-						height:60px;	
-						float:left;
-						background:red;
-						margin:30px 625px;
-						border-radius:20px;
-					}
+						#actarea {
+							width:150px;
+							height:60px;	
+							float:left;
+							margin:20px 650px;
+							border-radius:20px;
+							background:yellow;
+						}
 						#actarea p{
-							margin:0px;
+							margin:0;
 							padding:0;
 						}
 						#actarea p a:link,#actarea p a:visited{
 							text-decoration:none;
-							color:#192F59;
+							color:#002147;
 							background:white;
-							padding:21px;
+							padding:20px;
 							display:block;
 							font:bold 15px arial;
-							border:solid 2px #192F59;
+							border:solid 2px #002147;
 							border-radius:20px;
 						}
 						#actarea p a:hover{
-							background:#192F59;
+							background:#002147;
 							color:white;
-							transform:scale(1.1,1.1);
 							
 						}
 
 			#teddyarea{
 				width:1500px;
-				height:920px;
-				background:#82DE27;
+				height:1080px;
+				background:white;
 				float:left;
 			}
 			
 				#teddy1{
 					width:1500px;
 					height:60px;
-					background:#12996A;
 					float:left;
-					margin:2px 0;
+					margin:10px;
 				}
 					#teddy1a{
 						width:540px;
-						height:1px;
+						height:1.5px;
 						float:left;
 						margin:30px 0 25px 25px;
-						background:#A92D2F;
+						background:linear-gradient(to right,transparent 0%,#002147 );
 					}
 					#teddy1b{
 						width:350px;
@@ -607,29 +686,29 @@
 						float:left;
 					}
 						#teddy1b h1{
-							font:normal 40px arial;
-							color:#A92D2F;
+							font:normal 40px Lacquer;
+							color:#002147;
 							margin:10px;
 						}
 					#teddy1c{
 						width:540px;
-						height:1px;
+						height:1.5px;
 						float:left;
 						margin:30px 25px 25px 0;
-						background:#A92D2F;
+						background:linear-gradient(to left,transparent 0%,#002147 );
 					}
 
 				.teddy2{
 					width:650px;
 					height:300px;
 					float:left;
-					margin:30px 50px;
+					margin:100px 50px;
 				}
 					.teddy2a{
 						width:325px;
 						height:325px;
 						float:left;
-						background:#A92D2F;
+						background:#002147;
 						margin-top:-12.5px;
 						overflow:hidden;
 					}
@@ -645,84 +724,80 @@
 						width:320px;
 						height:296px;
 						float:left;
-						background:white;
-						border:solid 2px #A92D2F;
+						background:#F8F7F5;
+						border:solid 2px #002147;
+						border-left:none;
+						transition:all 4s;
 					}
-						.teddy2b:last-child{
-							border-left:none;
-						}
 						.teddy2b:hover{
-							animation-name:are;
-							animation-duration:4s;
-							animation-iteration-count:1;
+							color:white;
+							background:#002147;
 						}
-						.teddywrt{
-							width:300px;
-							height:80px;
-							background:yellow;
-							margin:0 10px;
-							padding:10px 0;
-						}
-							.teddywrt h1{
+
+
+							.teddy2b h1{
 								font:normal 35px arial;
-								color:#A90D2F;
-								margin:0;
+								color:#002147;
+								margin:30px 25px;
 							}
-							.teddywrt p{
+							.teddy2b p{
 								font:normal 15px arial;
-								margin:0;
+								margin:30px 25px;
 							}
-							.teddy2b1{
-								width:150px;
-								height:35px;
-								background:#A92D2F;
-								margin:0 20px;
+							.teddy2b a:link,.teddy2b a:visited{
+								text-decoration:none;
+								color:white;
+								font:normal 15px arial;
+								background:#002147;
+								margin: 25px;
+								padding:10px;
 							}
-								.teddy2b1 a:link,.teddy2b1 a:visited{
-									text-decoration:none;
-									color:white;
-									background:#A92D2F;
-									display:block;
-									padding:10px;
-								}
-								.teddy2b1 a:hover{
-									color:#A92D2F;
-									background:white;
-				
-								}
+							.teddy2b a:hover{
+								color:#002147;
+								background:white;	
+							}
 							.teddyside{
-								
-								width:15px;
+								width:0px;
 								height:0px;
 								float:right;
-								margin:1px 0 0 0;
-								border-top:solid 60px transparent;
-								border-right:solid 60px #A92D2F;
-								border-left:solid 60px transparent;
-				}
+								border-top:solid 55px transparent;
+								border-right:solid 55px #002147;
+								border-left:solid 55px transparent;
+								margin-top:37px;
 							}
-				#teddy3{
-					width:1450px;
-					height:480px;
-					background:#F8F7F5;
+			
+
+
+				.teddy3{
+					width:1400px;
+					height:400px;
 					float:left;
-					margin:10px 25px;
+					background:#F8F7F5;
+					margin:25px 50px;
 				}
 					.teddy31{
+						width:696px;
+						height:396px;
+						float:left;
+						background:#F8F7F5;
+						border:solid 2px #B1A299;
+						border-right:none;
+					}
+					.teddy32{
 						width:700px;
 						height:430px;
-						background:#F7F1E6;
 						float:left;
-						margin:25px 12.5px;
+						background:#F8F7F5;
+						margin-top:-17px;
 					}
 						.teddy31 h1{
 							font:normal 30px arial;
-							padding:15px;
-							color:#A92D2F;
+							padding:30px 50px ;
+							color:#002147;
 						}
 						.teddy31 p{
 							font:normal 15px arial;
-							padding:15px;
+							padding:30px 50px;
 						}
 						#watch{
 							width:200px;
@@ -735,100 +810,235 @@
 								text-decoration:none;
 								color:white;
 								display:block;
-								background:#A92D2F;
+								background:#002147;
 								padding:12px 25px;
 								font:normal 15px arial;
 							}
-							#watch:hover{
-								color:#A92D2F;
-								background:white;
-								transform:rotate(360deg);
-							}
 							#watch a:hover{
-								transform:rotate(360deg);
+								color:#002147;
+								background:white;
 							}
+			#contactarea{
+				width:1500px;
+				height:850px;
+				float:left;
+				background:#F8F7F5;
+			}
+			
+				#contactarea1{
+					width:1500px;
+					height:60px;
+					float:left;
+					margin:40px 0px;
+				}
+					#contactarea1a{
+						width:545px;
+						height:2px;
+						float:left;
+						margin:30px 0 25px 45px;
+						background:linear-gradient(to right,transparent 0%,#002147 );
+					}
+					#contactarea1b{
+						width:300px;
+						height:60px;
+						float:left;
+					}
+						#contactarea1b h1{
+							font:normal 40px arial;
+							color:#002147;
+							margin:10px;
+							text-align:center;
+						}
+					#contactarea1c{
+						width:545px;
+						height:2px;
+						float:left;
+						margin:30px 45px 25px 0;
+						background:linear-gradient(to left,transparent 0%,#002147 );
+					}
+				.contact1a{
+					width:730px;
+					height:600px;
+					margin:25px 0;
+					float:left;
+				}
+						.contact1a h1{
+							margin:15px 125px;
+							font:normal 30px arial;
+							color:#002147;
+						}
+						.contact1a i{
+							margin-right:20px;
+							font-size:30px ;
+						}
+						.contact1a ul{
+							list-style:none;
+							margin:0;
+							padding:0;
+						}
+						.contact1a ul li{
+							padding:20px 30px;
+							border:solid 1px #E6E6E6;
+							font:normal 20px arial;
+							margin:30px 50px 0 130px;
+							
+						}
+					#maparea{
+						width:550px;
+						height:450px;
+						float:left;
+						margin:25px  130px 0 50px;
+					}		
 					
 			#footerarea{
 				width:1500px;
 				height:600px;
-				background:black;
+				background:#002147;
 				float:left;
-				
-			}
+			}		
+								
+				#footerarea h1{
+					font:bold 30px arial;
+					color:white;
+					margin:70px 10px 30px 100px;
+					padding:0 15px;
+					border-left:solid 5px white;
+				}
 				#sfoottl{
 					width:0px;
 					height:0px;
 					float:left;
-					margin:-25px 0 0 10px;
-					border-top:solid 25px transparent;
-					border-right:solid 25px black;
-					border-left:solid 25px transparent;
+					padding:0px;
+					margin:-25px 0 -55px 10;
+					border-top:solid 26px transparent;
+					border-right:solid 26px black;
+					border-left:solid 26px transparent;
 				}
 				#sfootr{
 					width:150px;
 					height:50px;
 					background:black;
 					float:left;
-					margin:-25px 0 0 60px;
+					margin:-24.8px 0 0 60px;
 				}
-				.foot{
-					width:325px;
-					height:500px;
-					background:black;
-					float:left;
-					margin:50px;
-				}
-		
-					.foot p{
-						color:yellow;
-						margin:5px 25px;
+					#sfootr p{
+						font-family: 'Ephesis', cursive;
+						font-family: 'Indie Flower', cursive;
+						font-family: 'Marhey', sans-serif;
+						font-family: 'Titillium Web', sans-serif;
+						color:#F8F7F5;
+						margin:10px 30px;
+						margin-right:none;
+						font-size:20px;
 					}
-		
-					.foot ul{
-						list-style:none;
-						margin:0;
-						padding:0;
-					}
-		
-					.foot ul li{
-						color:yellow;
-						margin:0 15px;
-					}
-					.foot ul li a:link,.foot ul li a:visited{
-						color:white;
-						text-decoration:none;
-						padding:10px 15px;
-						display:block;
-						font:normal 13px arial;
-					}
-					.foot ul li a:hover{
-						color:red;
-						background:white;
-					}
-	
-					#infoot{
-						width:300px;
-						height:80px;
-						background:pink;
+					.footspace{
+						width:80px;
+						height:400px;
 						float:left;
-						margin:15px;
+						margin:10px 10px;
 					}
-				 #map{
-					width:280px;
-					height:225px;
-					background:red;	
-					margin:15px 17.5px;
-					border:5px solid #D2DED0;
-				}
-				#social{
-					width:300px;
-					height:225px;
-					background:yellow;	
-					margin:15px;
-						
-				}
-					
+					.foot{
+						width:300px;
+						height:400px;
+						float:left;
+						margin:10px 10px;
+					}
+						.foot ul{
+							list-style-type:none;
+							margin:0;
+							padding:0;
+						}
+						.foot ul li a:link,.foot ul li a:visited{
+							text-decoration:none;
+							color:white;
+							display:block;
+							padding:10px;
+							font:normal 14px arial;
+							transition:all 1s;
+						}
+						.foot ul li a:hover{
+							color:red;
+							display:block;
+							background:linear-gradient(to left,transparent 0%,#F8F7F5 );
+						}
+
+					#socal{
+						width:400px;
+						height:380px;
+						float:left;
+						margin:10px 10px;
+					}
+						#socal h2{	
+							font:normal 30px arial;
+							color:white;
+							margin:5px;
+							padding:0 15px;
+							border-left:solid 3px red;
+
+						}
+						#socal p{	
+							font:normal 20px arial;
+							color:white;
+							padding:0 20px;
+						}
+						#socal p:nth-child(2n+1){	
+							font:normal 14px arial;
+						}
+						#socal a:link,#socal a:visited{
+							text-decoration:none;
+							color:white;
+							display:block;
+							padding:0 20px;
+							font:normal 20px arial;
+						}
+						#socal a:hover{
+							color:red;
+						}
+						#socal ul{
+							padding:0;
+							margin:0;
+							list-style:none;
+						}
+						#socal ul li{
+							float:left;
+							padding:50px 15px;
+						}
+					#linearea1{
+						width:700px;
+						height:1px;
+						float:left;
+						margin-top:10px;
+						margin-left:50px;
+						background:linear-gradient(to right,transparent 0%,#F8F7F5 );
+					}
+					#linearea2{
+						width:700px;
+						height:1px;
+						float:left;
+						margin-top:10px;
+						margin-right:50px;
+						background:linear-gradient(to left,transparent 0%,#F8F7F5 );
+					}
+					#namearea{
+						width:1500px;
+						height:60px;
+						float:left;
+						background:#002147;
+					}
+						#namearea ul{
+							margin:0;
+							padding:0;
+							list-style:none;
+						}
+						#namearea ul li{
+							color:white;
+							font:normal 17px arial;
+							float:left;
+							padding:20 225px;
+						}
+
 		</style>
+		<link rel="stylesheet" type="text/css" href="animate.css"/>
 	</head>
 	<body>
 		<div id="mainarea">
@@ -838,8 +1048,9 @@
 					<img src="wiki.png" />
 				</div>
 				<div id="logo2">
-					<font color="#F1F296">O</font> <font color="#F8FA7C">X</font> <font color="#E9EB50">F</font> <font color="#D7DA3B">O</font> <font color="#BCBF17">R</font> <font color="#AFB210">D</font> <font color="#F80F60">UNIVERSITY </font>
-					<hr color="#EC0578" width="240px" size="3px" align="left"/>
+					OXFORD
+					UNIVERSITY 
+					<hr color="#EC0578" width="220px" size="3px" align="left"/>
 				</div>
 			</div>
 			<div id="contact">
@@ -882,7 +1093,7 @@
 					<li> <a href="#">PHOTO GALLERY</a></li>
 					<li> <a href="#">FESTS & FUNCTION</a></li>
 					<li> <a href="#">INFRASTRUCTURE</a></li>
-					<li> <a href="#">CONTACT US</a></li>
+					<li> <a href="#connect">CONTACT US</a></li>
 				</ul>
 			</div>
 		</div>
@@ -892,7 +1103,7 @@
 				<ul>
 					<li> <a href="#"> HOME</a></li>
 					<li> <a href="#">ABOUT US</a></li>
-					<li> <a href="#">SCHOOL & PROGRAMMES</a></li>
+					<li> <a href="#sandp">SCHOOL & PROGRAMMES</a></li>
 					<li> <a href="#">ACADEMICS</a></li>
 					<li> <a href="#">ADMISSION</a></li>
 					<li> <a href="#">CAMPUS LIFE</a></li>
@@ -959,55 +1170,129 @@
 				</div>
 				
 			</div>
-			<div id="farea2">
-				<div class="farea2">
+			<div class="farea2">
+				<div class="farea21 wow fadeInLeft" data-wow-delay="0.1s" style="visibility: visible; -webkit-animation-delay: 0.1s; -moz-animation-delay: 0.1s; animation-delay: 0.1s;">
 					<div class="pic">
-						<a href="#"><img src="auditorim.jpg" height="100%" width="100%"/></a>
+						<a href="#"><img src="auditorim.jpg"/></a>
 					</div>
 					<div class="word">
 						<h1 align="center"><a href="#">Knowledge Resource Centre</a></h1>
 					</div>
 				</div>
-				<div class="farea2">
+				<div class="farea21 wow fadeInLeft" data-wow-delay="0.3s" style="visibility: visible; -webkit-animation-delay: 0.3s; -moz-animation-delay: 0.3s; animation-delay: 0.3s;">
 					<div class="pic">
-						<a href="#"><img src="gym.jpg" height="100%" width="100%"/>
+						<a href="#"><img src="gym.jpg"/></a>
 					</div>
 					<div class="word">
 						<h1 align="center"><a href="#">Gym Centre</a></h1>
 					</div>
 				</div>
-				<div class="farea2">
+				<div class="farea21 wow fadeInLeft" data-wow-delay="0.6s" style="visibility: visible; -webkit-animation-delay: 0.6s; -moz-animation-delay: 0.6s; animation-delay: 0.6s;">
 					<div class="pic">
-						<a href="#"><img src="hostel.jpg" height="100%" width="100%"/>
+						<a href="#"><img src="hostel.jpeg"/></a>
 					</div>
 					<div class="word">
 						<h1 align="center"><a href="#">Hostel </a></h1>
 					</div>
 				</div>
-				<div class="farea2">
+				<div class="farea21 wow fadeInLeft" data-wow-delay="0.9s" style="visibility: visible; -webkit-animation-delay: 0.9s; -moz-animation-delay: 0.9s; animation-delay: 0.9s;">
 					<div class="pic">
-						<img src="virtual.jpg" height="100%" width="100%"/>
+						<a href="#"><img src="virtual.jpg"/></a>
 					</div>
 					<div class="word">
 						<h1 align="center"><a href="#">Virtual Classrooms</a></h1>
 					</div>
 				</div>
 			</div>
-			<div id="farea3">
-				<h1 align="center">INSTITUTES / SCHOOLS AT OXFORD UNIVERSITY</h1>
+			<div class="farea2">
+				<div class="farea21 wow fadeInRight" data-wow-delay="0.1s" style="visibility: visible; -webkit-animation-delay: 0.1s; -moz-animation-delay: 0.1s; animation-delay: 0.1s;">
+					<div class="pic">
+						<a href="#"><img src="guest.png"/></a>
+					</div>
+					<div class="word">
+						<h1 align="center"><a href="#">Guest House</a></h1>
+					</div>
+				</div>
+				<div class="farea21 wow fadeInRight" data-wow-delay="0.3s" style="visibility: visible; -webkit-animation-delay: 0.3s; -moz-animation-delay: 0.3s; animation-delay: 0.3s;">
+					<div class="pic">
+						<a href="#"><img src="sport.jpeg"/></a>
+					</div>
+					<div class="word">
+						<h1 align="center"><a href="#">Sports Complex</a></h1>
+					</div>
+				</div>
+				<div class="farea21 wow fadeInRight" data-wow-delay="0.6s" style="visibility: visible; -webkit-animation-delay: 0.6s; -moz-animation-delay: 0.6s; animation-delay: 0.6s;">
+					<div class="pic">
+						<a href="#"><img src="cafetaria.jpeg"/></a>
+					</div>
+					<div class="word">
+						<h1 align="center"><a href="#">Cafetaria</a></h1>
+					</div>
+				</div>
+				<div class="farea21 wow fadeInRight" data-wow-delay="0.9s" style="visibility: visible; -webkit-animation-delay: 0.9s; -moz-animation-delay: 0.9s; animation-delay: 0.9s;">
+					<div class="pic">
+						<a href="#"><img src="region.jpeg"/></a>
+					</div>
+					<div class="word">
+						<h1 align="center"><a href="#">Campus Regions</a></h1>
+					</div>
+				</div>
 			</div>
-			<div id="farea4">
-				<div class="farea4">
-					<img src="commerce.jpeg" height="100%" width="100%"/> 
+		</div>
+
+		
+		<div id="extraarea">
+			<div id="extraarea1">
+				<div id="extraarea1a">
 				</div>
-				<div class="farea4">
-					<img src="law.jpg" height="100%" width="100%"/> 
+				<div id="extraarea1b">
+				<h1 align="center" id="sandp">INSTITUTES / SCHOOLS AT OXFORD UNIVERSITY</h1>
 				</div>
-				<div class="farea4">
-					<img src="it.jpg" height="100%" width="100%"/> 
+				<div id="extraarea1c">
 				</div>
-				<div class="farea4">
-					<img src="health.jpg" height="100%" width="100%"/> 
+			</div>
+			<div class="extraarea2">
+				<div class="extra1 wow fadeInUp" data-wow-delay="0.1s" style="visibility: visible; -webkit-animation-delay: 0.1s; -moz-animation-delay: 0.1s; animation-delay: 0.1s;">
+					<img src="commerce.jpeg"/>
+					<div class="edetails">
+						School of Commerce And...
+						
+						The march of business management into the technology age continues at 
+					</div>
+				</div>
+				<div class="extra1 wow fadeInUp" data-wow-delay="0.3s" style="visibility: visible; -webkit-animation-delay: 0.3s; -moz-animation-delay: 0.3s; animation-delay: 0.3s;">
+					<img src="law.jpg"/>
+					<div class="edetails">
+						School of Law
+					</div> 
+				</div>
+				<div class="extra1 wow fadeInUp" data-wow-delay="0.6s" style="visibility: visible; -webkit-animation-delay: 0.6s; -moz-animation-delay: 0.6s; animation-delay: 0.6s;">
+					<img src="it.jpg" /> 
+					<div class="edetails">
+						School of Engineering and IT
+					</div>
+				</div>
+			</div>
+
+
+			<div class="extraarea2">
+				<div class="extra1 wow fadeInUp" data-wow-delay="0.1s" style="visibility: visible; -webkit-animation-delay: 0.1s; -moz-animation-delay: 0.1s; animation-delay: 0.1s;">
+					<img src="schoolofarts.jpg"/>
+					<div class="edetails">
+						School of Humanities 
+					</div> 
+				</div>
+				<div class="extra1 wow fadeInUp" data-wow-delay="0.3s" style="visibility: visible; -webkit-animation-delay: 0.3s; -moz-animation-delay: 0.3s; animation-delay: 0.3s;">
+					<img src="bio.jpg"/>
+					<div class="edetails">
+						School of Health & Allied S...
+					</div> 
+				</div>
+				<div class="extra1 wow fadeInUp" data-wow-delay="0.6s" style="visibility: visible; -webkit-animation-delay: 0.6s; -moz-animation-delay: 0.6s; animation-delay: 0.6s;">
+					<img src="research.jpeg" /> 
+					<div class="edetails">
+						School of Research
+					</div>
 				</div>
 			</div>
 		</div>
@@ -1016,17 +1301,23 @@
 				<div id="activity1a">		
 				</div>
 				<div id="activity1b">
-				<h1 align="center">ACTIVITIES</h1>;			
+				<h1 align="center">ACTIVITIES</h1>			
 				</div>
 				<div id="activity1c">			
 				</div>
 			</div>
 			<div id="activity2">
 				<div class="active">
+					<div class="topactivity">
+						<p><a href=".">COMMUNITY ACTIVITIES</a></p>
+					</div>
 					<a href="."><div class="imgactivity">
 						<img src="community.jpeg"/>
 					</div></a>
 					<div class="textactivity">
+						<h3>EARCH Hall raises £6.7m to date for Norham St Edmund..</h3>
+						<p>1 Dec 2023</p>
+						<a href="https://www.seh.ox.ac.uk/news/hall-raises-6-7m-so-far-for-noham-st-edmund">VIEW ARTICAL ></a>
 					</div>
 					<div class="topactivity">
 						<p><a href=".">COMMUNITY ACTIVITIES</a></p>
@@ -1037,6 +1328,9 @@
 						<a href="."><img src="award.jpeg"/></a>
 					</div>
 					<div class="textactivity">
+						<h3>Hall student Lukas Lehner awarded ESRC Outstanding..</h3>
+						<p>1 Dec 2023</p>
+						<a href="https://www.seh.ox.ac.uk/news/hall-raises-6-7m-so-far-for-noham-st-edmund">VIEW ARTICAL ></a>
 					</div>
 					<div class="topactivity">
 						<p><a href=".">AWAREDS & HONOURS</a></p>
@@ -1047,13 +1341,16 @@
 						<a href="."><img src="community1.jpeg"/></a>
 					</div>
 					<div class="textactivity">
+						<h3>EARCH Hall raises £6.7m to date for Norham St Edmund..</h3>
+						<p>1 Dec 2023</p>
+						<a href="https://www.seh.ox.ac.uk/news/hall-raises-6-7m-so-far-for-noham-st-edmund">VIEW ARTICAL ></a>
 					</div>
 					<div class="topactivity">
 						<p ><a href=".">EVENT HIGHLIGHT</a></p>
 					</div>
 				</div>
 			<div id="actarea">
-				<p ><a href="#">All News &nbsp; &gt;&gt;</a></p>
+				<p align="center"><a href="#">All News &nbsp; &gt;&gt;</a></p>
 			</div>
 			</div>
 		</div>
@@ -1069,109 +1366,169 @@
 				</div>
 			</div>
 			
-			<div class="teddy2">
+			<div class="teddy2 wow fadeInLeft" data-wow-delay="0.3s" style="visibility: visible; -webkit-animation-delay: 0.3s; -moz-animation-delay: 0.3s; animation-delay: 0.3s;">
 				<div class="teddy2a">
 					<img src="choose.jpg"/>
 				</div>
 				<div class="teddy2b">
-					<div class="teddywrt">
-						<h1>Why choose our college?</h1>
-					</div>
-					<div class="teddywrt">
-						<p>Teddy Hall is a friendly and inclusive college located in the heart of Oxford.</p>
-					</div>
-					<div class="teddy2b1">
-						<a href=".">Find out more &nbsp &nbsp &gt</a>
-					</div>
+					<h1>Why choose our college?</h1>
+					<p>Teddy Hall is a friendly and inclusive college located in the heart of Oxford.</p>
+					<a href=".">Find out more &nbsp &nbsp &gt</a>
+					
 					<div class="teddyside">
 					</div>
 				</div>
 			</div>
-			<div class="teddy2">
+			<div class="teddy2 wow fadeInRight" data-wow-delay="0.3s" style="visibility: visible; -webkit-animation-delay: 0.3s; -moz-animation-delay: 0.3s; animation-delay: 0.3s;">
 				<div class="teddy2a">
 					<img src="meet.webp"/>
 				</div>
 				<div class="teddy2b">
-					<div class="teddywrt">
-						<h1>Meet Our Students</h1>
-					</div>
-					<div class="teddywrt">
-						<p>Find out about life at Teddy Hall directly from our students!</p>
-					</div>
-					<div class="teddy2b1">
-						<a href=".">Read Profiles &nbsp &nbsp &gt</a>
-					</div>
+					<h1>Meet Our Students</h1>
+					<p>Find out about life at Teddy Hall directly from our students!</p>
+					<a href=".">Read Profiles &nbsp &nbsp &gt</a>
 					<div class="teddyside">
 					</div>
 				</div>
 			</div>
-			<div id="teddy3">
+			
+			<div class="teddy3">
 				<div class="teddy31">
 					<h1>Tour of Teddy Hall</h1>
 					<p>Follow undergraduates Ellis and Verity around St Edmund Hall, affectionately known as Teddy Hall, for a first-hand glimpse of what makes Teddy Hall a brilliant place to live and study!</p>
+
 					<div id="watch">
 						<a href="https://youtu.be/zv4BBlo6iCI?si=WRbb9sK9x5UnTJTq">Watch the Video &nbsp &nbsp &gt</a>
 					</div>
 				</div>
-				<div class="teddy31">
-					<iframe width="100%" height="100%" src="https://www.youtube.com/embed/zv4BBlo6iCI?si=Bk7UpbdEHv9RnnBJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+				<div class="teddy32">
+				<iframe width="100%" height="100%" src="https://www.youtube.com/embed/zv4BBlo6iCI?si=Bk7UpbdEHv9RnnBJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>	
 				</div>
+			
 			</div>
 		</div>
+
+
+		<div id="contactarea" >
+			<div id="contactarea1">
+				<div id="contactarea1a">
+				</div>
+				<div id="contactarea1b">
+					<h1 id="connect">Contact Us</h1>
+				</div>
+				<div id="contactarea1c">
+				</div>
+
+				<div class="contact1a">
+					<h1>Fort Campus</h1>
+					<ul>
+						<li>
+							<i class="fa fa-map-marker"></i>
+							Mahatma Gandhi Road, Fort, Mumbai, Maharashtra 400032.
+						</li>
+						<li>
+							<i class="fa fa-phone"></i>
+							022 68320000
+						</li>
+					</ul>
+					<h1>Kalina Campus</h1>
+					<ul>
+						<li>
+							<i class="fa fa-map-marker"></i>
+							University of Mumbai,Vidya Nagari, Kalina, Santacruz East, Mumbai, Maharashtra 400098.
+						</li>
+						<li>
+							<i class="fa fa-phone"></i>
+							022 26543000
+						</li>
+					</ul>
+				</div>
+
+				<div class="contact1a">
+					<h1 align="center">Map </h1>
+				<div id="maparea">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7700.745431580889!2d-1.2492130271785038!3d51.76091274101192!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4876c6a9ef8c485b%3A0xd2ff1883a001afed!2sUniversity%20of%20Oxford!5e0!3m2!1sen!2sin!4v1701546720472!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+				</div>
+		</div>	
+
 
 		<div id="footerarea">
 			<div id="sfoottl">
 			</div>
 			<div id="sfootr">
+				<p>SONU RAJ</p>
+			</div>
+				<h1>Useful link</h1>
+			<div class="footspace">
 			</div>
 			<div class="foot">
-				<div id="infoot">
-				</div>
-					<p>OUR SCHOOLS & COURSES</p>
 				<ul>
-					<li><a href="#">School of Commerce And Management</a></li>
-					<li><a href="#">School of Engineering and IT</a></li>
-					<li><a href="#">School of Health & Allied Science</a></li>
-					<li><a href="#">School of Humanities</a></li>
-					<li><a href="#">School of Research</a></li>
-					<li><a href="#">School of Low</a></li>
+					<li><a href=".">Tenders & Quotations</a></li>
+					<li><a href=".">LMS-Moodle</a></li>
+					<li><a href=".">OER Economics</a></li>
+					<li><a href=".">Notifications</a></li>
+					<li><a href=".">Ragging Victim ? 1800-180-5522</a></li>
+					<li><a href=".">Career Counselling</a></li>
+					<li><a href=".">Sambhāṣaṇ /संभाषण</a></li>
+					<li><a href=".">Employment Time</a></li>
+					<li><a href=".">ARIIA</a></li>
 				</ul>
-				
 			</div>
 			<div class="foot">
-				<p>USEFUL LINKS</p>
-				<ul>	
-				<li><a href="#">ISR Activities</a></li>
-				<li><a href="#">Examination Notice</a></li>
-				<li><a href="#">Departmental Notice</a></li>
-				<li><a href="#">Fees Notice</a></li>
-				<li><a href="#">UMS</a></li>
-				</ul>
-				<p>ACADEMIC BANK OF CREDITS (ABC)</p>
 				<ul>
-				<li><a href="#">Document Verification</a></li>
-				<li><a href="#">International Students</a></li>
-				<li><a href="#">Video Gallery</a></li>
-				<li><a href="#">Scholarship</a></li>
-				<li><a href="#">Research and Development Cell</a></li>												<li><a href="#">Newsletter</a></li>
-				</ul>	
+					<li><a href=".">UGC-NET/Mah-SET</a></li>
+					<li><a href=".">Election Section</a></li>
+					<li><a href=".">Ragging Act</a></li>
+					<li><a href=".">Webmail</a></li>
+					<li><a href=".">Ordinances & Regulations</a></li>
+					<li><a href=".">Maharashtra Public Universities Act, 2016 English</a></li>
+					<li><a href=".">Uniform Statutes</a></li>
+					<li><a href=".">University Human Value</a></li>
+				</ul>
 			</div>
 			<div class="foot">
-				<div id="map">
-					<iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d115815.02634489092!2d87.2583892!3d24.8904909!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1700925841210!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-				</div>
-				<div id="social">
-					<h2>SOCIAL</h2>
-					<ul>
-						<li><a href="#"></a></li>
-						<li><a href="#"></a></li>
-						<li><a href="#"></a></li>
-						<li><a href="#"></a></li>
-					</ul>
-				</div>
+				<ul>
+					<li><a href=".">Information Under RTI</a></li>
+					<li><a href=".">Information for RTS Act</a></li>
+					<li><a href=".">Telephone Directory</a></li>
+					<li><a href=".">National Portal of India</a></li>
+					<li><a href=".">Department of Students' Development</a></li>
+					<li><a href=".">Knowledge Resource Centre (Library)</a></li>
+					<li><a href=".">Maharashtra Public Universities Act, 2016 Marath</a></li>
+					<li><a href=".">UM – DAE C.E.B.S.</a></li>
+					<li><a href=".">Biometric Attendance</a></li>
+				</ul>
 			</div>
-
+			<div id="socal">
+				<h2>Get in Touch</h2>
+				<p>Oxford University of UK</p>
+				<p>Wellington Square, Oxford OX1 2JD, United Kingdom</p>
+				<a href="mailto:oxfordunv897@gmail.com?subject=Query"><i class="fa fa-envelope-o">&nbsp:</i>&nbsp oxfordunv897@gmail.com</a><br>
+				<a href="https://www.google.com/maps/dir/22.7998915,86.1446483/University+of+Oxford,+Wellington+Square,+Oxford+OX1+2JD,+United+Kingdom/@43.0761066,-18.4658573,4.95z/data=!4m9!4m8!1m1!4e1!1m5!1m1!1s0x4876c6a9ef8c485b:0xd2ff1883a001afed!2m2!1d-1.2543668!2d51.7548164?hl=en&entry=ttu"><i class="fa fa-location-arrow">&nbsp &nbsp:</i>&nbsp Map</a>
+				<ul>
+					<li><a href=""><i class="fa fa-facebook-square"></i></a></li>
+					<li><a href=""><i class="fa fa-twitter-square "></i></a></li>
+					<li><a href=""><i class="fa fa-linkedin-square"></i></a></li>
+					<li><a href="https://youtu.be/zv4BBlo6iCI?si=WRbb9sK9x5UnTJTq"><i class="fa fa-youtube-play"></i></a></li>
+				</ul>
+			</div>
+			<div id="linearea1">
+			</div>
+			<div id="linearea2">
+			</div>
 		</div>
-	     </div>	
+		<div id="namearea">
+			<ul>
+				<li>&copy Copyright Oxford University 2023</li>
+				<li>Design & Developed By :<font color="yellow"> Sonu Raj</font></li>
+			</ul>
+		</div>
+
+
+	     </div>
+    		<script src="wow.min.js"></script>
+   		 <script>
+   		  new WOW().init();
+   		 </script>	
 	</body>
 </html>
