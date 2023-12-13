@@ -1,0 +1,1773 @@
+<html>
+	<head>
+		<title>project</title>
+		<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css"/>
+
+		<style type="text/css">
+
+
+			body{
+				margin:0;
+				padding:0;
+
+			}
+			iframe{
+				border:none;
+			}
+				
+			#mainarea{
+				width:1500px;
+				height:6000px;
+				margin:0 auto;
+			}
+			#toparea{
+				width:1500px;
+				height:115px;
+				float:left;
+				background:white;
+			}
+				#logo{
+					width:390px;
+					height:115px;
+					float:left;
+					margin:0;
+				}
+					#logo1{
+						width:100px;
+						height:100px;
+						float:left;
+						margin:7px 10px;
+						overflow:hidden;
+
+					}
+					#logo1 img{
+						width:100%;
+						height:100%;
+						transition:transform 10s  ease;
+					}
+					#logo1 img:hover{
+						width:100%;
+						height:100%;
+						transform:rotate(720deg) ;
+					}
+					#logo2{
+						width:260px;
+						height:100px;
+						color:#F80F60;
+						text-shadow: 5px 1px 3px rgba(0,0,0,0.5);
+						font:bold 30px  'Ephesis', cursive;
+						float:left;
+						margin:0;
+						padding:7px 0;
+					}
+				#contact{
+					width:360px;
+					height:100px;
+					float:left;
+					margin:7.5px 0;
+				}
+					#contact ul{
+						list-style:none;
+						margin:0;
+						padding:0;
+					}
+					#contact ul li{
+						color:red;
+						float:left;
+						margin:20px 1px;
+						padding:3px 10px;
+						font :normal 13px 'Ephesis', cursive;
+						border-right:solid 2px #FA1A0B;
+						text-align:center;
+						}
+					#contact ul li:last-child{
+						border-right:none;
+						}
+
+					#contact ul li a:link,#contact ul li a:visited{
+						color:#002147;
+						font :normal 13px 'Ephesis', cursive;
+						text-decoration:none;
+						}
+					#contact ul li a:hover{
+						color:#099FA4;
+						border:dotted 1px #6D05EA;
+						text-decoration:none;
+						}
+				#title{
+					width:750px;
+					height:100px;
+					float:left;
+					margin:7.5px 0;
+				}
+
+					#title ul {
+						list-style:none;
+						margin:0;
+						padding:0;
+					}
+					#title ul li {
+						float:left;
+						margin:30px 10px;
+					}
+					#title ul li a:link,#title ul li a:visited{
+						font:bold 10px 'Ephesis', cursive;
+						text-decoration:none;
+						background:#002147;
+						color:white;
+						padding:15px;
+						display:block;
+						border-radius:15px;
+						border:solid 2px #002147;
+					}
+					#title ul li a:hover{
+						background:white;
+						color:#002147;
+						border:solid 2px #002147;
+					}
+
+			#m1{
+				width:1500px;
+				height:55px;
+				background:black;
+				float:left;
+				position:sticky;
+				top:0;
+				z-index:1000;
+			}
+				#menuarea1{
+					width:850px;
+					height:55px;
+					float:left;
+					margin:0 325px;
+				}
+					#menuarea1 ul{
+						list-style-type:none;
+						margin:0;
+						padding:0;
+					}
+					#menuarea1 ul li{
+						color:white;
+						float:left;
+						font:bold 13px arial;
+					}
+					#menuarea1 ul li a:link,#menuarea1 ul li a:visited{
+						text-decoration:none;
+						color:white;
+						padding:20px ;
+						display:block;
+					}
+					#menuarea1 ul li a:hover{
+						background:#F8F7F5;
+						border-radius:3px;
+						color:#F30433;
+					}
+			#m2{
+				width:1500px;
+				height:55px;
+				float:left;
+				background:white;
+			}
+				#menuarea2{
+					width:1000px;
+					height:55px;
+					margin:0 250px;
+					float:left;
+				}
+					#menuarea2 ul{
+						list-style-type:none;
+						margin:0;
+						padding:0;
+					}
+					#menuarea2 ul li{
+						float:left;
+						font:bold 13px arial;
+					}
+				
+					#menuarea2 ul li a:link,#menuarea2 ul li a:visited{
+						text-decoration:none;
+						color:black;
+						padding:20px;
+						display:block;
+					}
+					#menuarea2 ul li a:hover{
+						background:#002147;
+						border-radius:3px;
+						color:white;
+					}
+			#picarea{
+				width:1500px;
+				height:500px;
+				background:url('mainpic.jpg');
+				float:left;
+				background-size:cover;
+				overflow:hidden;
+			}
+				#picarea img{
+					height:100%;
+					width:100%;
+					animation-name:car;
+					animation-duration:9s;
+					animation-iteration-count:infinite;
+					
+				}
+				@keyframes car{
+					0%{
+						transform:translateX(-300px);
+					}
+					50%{
+						transform:translateX(1500px);
+					}
+				}
+			#slidearea{
+				width:1500px;
+				height:55px;
+				background:red;
+				float:left;
+			}
+				#lslide1{
+					width:200px;
+					height:55px;
+					float:left;
+				}
+					#lslide1 h2{
+						color:white;
+						font:normal 25px ; 
+						margin:10px 30px;
+						
+					}	
+				#lslide2{
+					width:1300px;
+					height:55px;
+					background:black;
+					float:left;
+				}
+					#lslide2 marquee ul{
+						list-style:none;
+						margin:20px;
+					}
+					#lslide2 marquee ul li{
+						float:left;
+						margin:0 25px;
+						font:bold 13px arial;
+					}
+					#lslide2 marquee ul li a:link,#lslide2 marquee ul li a:visited{
+						color:white;
+						text-decoration:none;	
+					}
+					#lslide2 marquee ul li a:hover{
+						color:yellow;
+						border:dotted 1px #45F729;
+					}
+				
+			#program{
+				width:1500px;
+				height:810px;
+				float:left;
+
+			}
+				#p1{
+					width:1500px;
+					height:60px;
+					margin:50px 0 10px 0;
+					float:left;
+				}				
+					#p1a{
+						width:575px;
+						height:1.5px;
+						float:left;
+						margin:30px 0 25px 25px;
+						background:linear-gradient(to right,transparent 0%,#002147 );
+					}
+
+					#p1b{
+						width:300px;
+						height:60px;
+						float:left;
+					}
+						#p1b h1{
+							font:normal 38px 'Ephesis', cursive;
+							margin:5px;
+							color:#002147;
+						}
+					#p1c{
+						width:575px;
+						height:1.5px;
+						float:left;
+						margin:30px 25px 25px 0;
+						background:linear-gradient(to left,transparent 0%,#002147 );
+					}
+
+					#p11{
+						width:1100px;
+						height:50px;
+						margin:10px 200px;
+						float:left;
+					}
+						#p11 p{
+							font:normal 15px arial;
+							margin:17.5px 10;
+						}
+				#p2{
+					width:560px;
+					height:50px;
+					margin:10px 470px;
+					float:left;
+				}
+					#p2 ul{
+						list-style:none;
+						margin:0;
+						padding:0;
+					}
+					#p2 ul li{
+						float:left;
+						margin:0 25px;
+					}
+					#p2 ul li a:link,#p2 ul li a:visited{
+						text-decoration:none;
+						color:#002147;
+						background:white;
+						padding: 15px ;
+						font:bold 15px arial;
+						border-radius:10px;
+						border:solid #002147 3px;
+						display:block;
+					}
+					#p2 ul li a:hover{
+						color:white;
+						background:#002147;
+					}
+				#p3{
+					width:1500px;
+					height:500px;
+					margin:10px;
+					float:left;
+				}
+			#facilityarea{
+				width:1500px;
+				height:810px;
+				float:left;
+				background:#F8F7F5;
+			}
+				#farea1{
+					width:1500px;
+					height:60px;
+					float:left;
+					margin:25px 0;
+				}
+					#farea1a{
+						width:585px;
+						height:1.5px;
+						float:left;
+						margin:30px 0 25px 25px;
+						background:linear-gradient(to right,transparent 0%,#002147 );
+					}
+					#farea1b{
+						width:280px;
+						height:60px;
+						float:left;
+					}
+						#farea1b h1{
+							font:normal 35px 'Ephesis', cursive;
+							margin:4px;
+							color:#002147;
+						}
+					#farea1c{
+						width:585px;
+						height:1.5px;
+						float:left;
+						margin:30px 25px 25px 0;
+						background:linear-gradient(to left,transparent 0%,#002147 );
+					}
+				.farea2{
+					width:1300px;
+					height:300px;
+					float:left;
+					margin:20px 100px;
+				}
+
+					.farea21{
+						width:300px;
+						height:280px;
+						float:left;
+						background:white;
+						margin:10px 12.5px;
+						box-shadow: 0px 5px 4px 1px rgba(198,198,198,1);
+					}	
+					.pic{
+						width:300px;
+						height:200px;
+						float:left;
+						overflow:hidden;
+						position:relative;
+					}	
+						
+						.pic img{
+							height:100%;
+							width:100%;
+							transition:all 3s;
+						}
+							.pdetail{
+								position:absolute;
+								width:100%;
+								height:100%;
+								bottom:-200px;
+								background:rgba(50, 79, 131, 0.6);
+								display:block;
+								transition:all 0.4s;
+							}
+							.pdetail a:link,.pdetail a:visited{
+								position:absolute;
+								padding:10px;
+								font-size:25px;
+								margin:75px 0 0 120px ;
+								color:white;
+								display:block;
+								border:solid 1px red;
+								border-radius:50%;
+								transition:all 1s;
+							}
+							
+							.pic:hover .pdetail{
+								display:block;
+								transform:translate(0,-100%);
+							}
+							.pic:hover .pdetail a{
+								transform:rotate(720deg) scale(1.0,1.0);
+							}
+							.pdetail a:hover{
+								color:red;
+							}
+					.word{
+						width:300px;
+						height:80px;
+						float:left;
+					}
+						.word h1{
+							font:bold 23px arial;
+							margin:20px;
+						}
+							.word h1 a:link,.word h1 a:visited{
+								color:#002147;
+								text-decoration:none;
+							}
+							.word h1 a:hover{
+								color:#AB0530;
+							}
+			#extraarea{
+				width:1500px;
+				height:820px;
+				float:left;
+			}
+				#extraarea1{
+					width:1500px;
+					height:60px;
+					float:left;
+					margin:50px 0px;
+				}
+					#extraarea1a{
+						width:350px;
+						height:1.5px;
+						float:left;
+						margin:30px 0 25px 25px;
+						background:linear-gradient(to right,transparent 0%,#002147 );
+					}
+					#extraarea1b{
+						width:750px;
+						height:60px;
+						float:left;
+					}
+					#extraarea1b h1{
+						font:bold 25px 'Ephesis', cursive;
+						margin:12px;
+						color:#002147;
+					}
+					#extraarea1c{
+						width:350px;
+						height:1.5px;
+						float:left;
+						margin:30px 25px 25px 0;
+						background:linear-gradient(to left,transparent 0%,#002147 );
+					}
+				.extraarea2{
+					width:1100px;
+					height:250px;
+					float:left;
+					margin:20px 200px;
+				}
+					.extra1{
+						width:300px;
+						height:200px;
+						float:left;
+						margin:25px 0 25px 50px;
+						box-shadow: 0px 5px 4px 1px rgba(198,198,198,1);
+						position:relative;
+						overflow:hidden;
+					}
+						
+						.extra1 img{
+							height:100%;
+							width:100%;
+							transition:all 3s;
+						}
+							.edetails{
+								position:absolute;
+								bottom:-170px;
+								height:100%;
+								width:100%;
+								background:rgba(50, 79, 131, 0.5);
+								display:block;
+								transition:all 1s;
+								padding:0;
+								margin:0;
+							}
+							.edetails h4{
+								position:absolute;
+								color:white;
+								font:normal 20px arial;
+								padding:0px 25px 20 30px;
+							}
+							.edetails p{
+								color:white;
+								position:absolute;
+								font:normal 14px arial;
+								padding:65px 25px 20 30px;
+							}
+							.edetails a:link,.edetails a:visited{
+								position:absolute;
+								text-decoration:none;
+								color:white;
+								font:bold 16px arial;
+								margin:150px 25px 0 30px;
+								border-bottom:solid 2px white;
+							}
+							.extra1:hover .edetails{
+								display:block;
+								bottom:0;
+							}
+						.extra1 img:hover{
+							transform:scale(1.1,1.1);
+						}	
+			#activityarea{
+				width:1500px;
+				height:600px;
+				background:#F8F7F5;
+				float:left;
+			}
+				#activity1{
+					width:1500px;
+					height:60px;
+					float:left
+					margin:10px 0;
+				}
+					#activity1a{
+						width:575px;
+						height:2px;
+						float:left;
+						margin:30px 0 25px 25px;
+						background:linear-gradient(to right,transparent 0%,#002147 );
+					}
+					#activity1b{
+						width:300px;
+						height:60px;
+						float:left;
+					}
+						#activity1b h1{
+							font:normal 35px 'Ephesis', cursive;
+							color:#002147;
+							margin:5px;
+						}
+					#activity1c{
+						width:575px;
+						height:2px;
+						float:left;
+						margin:30px 25px 25px 0;
+						background:linear-gradient(to left,transparent 0%,#002147 );
+					}
+				#activity2{
+					width:1450px;
+					height:490px;
+					float:left;
+					margin:40px 25px;
+				}
+					.active{
+						width:450px;
+						height:250px;
+						float:left;
+						margin:50px 16px;
+						position:relative;
+							
+					}
+						
+						.imgactivity{
+							width:225px;
+							height:250px;
+							float:left;
+							overflow:hidden;
+						}
+							.imgactivity img{
+								height:100%;
+								width:100%;
+							}
+							
+							.imgactivity img{
+								height:100%;
+								width:100%;
+								transition:transform 3s;
+							}
+							.imgactivity img:hover{
+								transform:scale(1.1,1.1);
+							}
+						.textactivity{
+							width:225px;
+							height:250px;
+							background:#B1A299;
+							float:left;
+						}
+							.textactivity h3{
+								font:normal 20px arial;
+								margin:40px 0 0 25px;
+							}
+							.textactivity p{
+								font:normal 15px arial;
+								margin:40px 0 40 65px;
+							}
+							.textactivity a:link,.textactivity a:visited{
+   								font:bold 15px arial;
+								margin:0 0 0 55px;
+								text-decoration:none;
+								color:#002147;
+								position:absolute;
+								transition:all 1s;
+							}
+							.textactivity  i{
+								transition:all 1s;
+								color:#002147;
+								
+							}
+							.textactivity a:hover i{
+								color:white;
+								transform:translate(10px,0);
+							}
+						.topactivity{
+							position:absolute;
+							top:-23px;
+							width:225px;
+							margin-left:100px;
+							text-align:center;
+							padding:4px 0;
+							color:white;
+							display:block;
+						}
+							.topactivity p{
+									text-decoration:none;
+									text:solid 13px arial;
+									color:white;
+									margin:0;
+									padding:0;
+							}
+							.topactivity a:link,.topactivity a:visited{
+									text-decoration:none;
+									font:normal 13px arial;
+									background:#002147;
+									color:white;
+									display:block;
+									padding:10px 35px;
+							}
+							
+		
+						#actarea {
+							width:150px;
+							height:60px;	
+							float:left;
+							margin:20px 650px;
+							border-radius:20px;
+						}
+						#actarea  a:link,#actarea a:visited{
+							text-decoration:none;
+							color:#002147;
+							background:white;
+							padding:20px;
+							display:block;
+							font:bold 15px arial;
+							border:solid 2px #002147;
+							border-radius:20px;
+							transition:all 0.5s;
+						}
+						#actarea  a:hover{
+							background:#002147;
+							color:white;
+						}
+						#actarea i{
+							transition:all 0.5s;
+						}
+						#actarea a:hover i{
+							transform:translate(10px,0);
+						}
+
+			#teddyarea{
+				width:1500px;
+				height:1080px;
+				background:white;
+				float:left;
+			}
+			
+				#teddy1{
+					width:1500px;
+					height:60px;
+					float:left;
+					margin:10px;
+				}
+					#teddy1a{
+						width:540px;
+						height:1.5px;
+						float:left;
+						margin:30px 0 25px 25px;
+						background:linear-gradient(to right,transparent 0%,#002147 );
+					}
+					#teddy1b{
+						width:350px;
+						height:60px;
+						background:white;
+						float:left;
+					}
+						#teddy1b h1{
+							font:normal 35px 'Ephesis', cursive;
+							color:#002147;
+							margin:5px;
+						}
+					#teddy1c{
+						width:540px;
+						height:1.5px;
+						float:left;
+						margin:30px 25px 25px 0;
+						background:linear-gradient(to left,transparent 0%,#002147 );
+					}
+
+				.teddy2{
+					width:650px;
+					height:300px;
+					float:left;
+					margin:100px 50px;
+				}
+					.teddy2a{
+						width:325px;
+						height:325px;
+						float:left;
+						background:#002147;
+						margin-top:-12.5px;
+						overflow:hidden;
+					}
+						.teddy2a img{
+							height:100%;
+							width:100%;
+							transition:transform 3s 0s ease;
+						}
+						.teddy2a img:hover{
+							transform:scale(1.1,1.1);
+						}
+					.teddy2b{
+						width:320px;
+						height:296px;
+						float:left;
+						background:#002147;
+						border:solid 2px #002147;
+						border-left:none;
+						position:relative;
+						overflow:hidden;
+					}
+						.teddy2b a:link,.teddy2b a:visited{
+								text-decoration:none;
+								color:white;
+								font:normal 15px arial;
+								background:#002147;
+								margin: 25px;
+								padding:10px 15px;
+								position:relative;
+								transition:all 1s;
+						}
+						.teddy2b:hover a{
+							color:#002147;
+							background:white;
+						}
+						.teddy2b i{
+							color:white;
+							transition:all 1s;
+						}
+						.teddy2b:hover i{
+							color:#002147;
+							transform:translate(10px,0);
+						}
+						.over{
+							width:100%;
+							height:100%;
+							float:left;
+							background:#F8F7F5;
+							position:absolute;
+							overflow:hidden;
+                                                        transition: all 1s;
+						}
+						.tdetail{
+							position:absolute;
+							width:100%;
+							height:100%;
+							display:block;
+							color:#002147;
+							overflow:hidden;
+                                                        transition: all 1s;
+					
+						}
+					
+						.teddy2b:hover .tdetail{
+							display:block;
+							color:white;
+						}
+						.teddy2b:hover .over{
+							transform:translate(-100%,-100%);
+					
+						}
+
+						.tdetail h1{
+							position:relative;
+							font:normal 35px arial;
+							padding:0px 30px;
+						}
+						.tdetail p{
+							position:relative;
+							font:normal 15px arial;
+							padding:0px 30px;
+							margin-bottom:50px;
+						}
+							.teddyside{
+								width:0px;
+								height:0px;
+								float:right;
+								border-top:solid 55px transparent;
+								border-right:solid 55px #002147;
+								border-left:solid 55px transparent;
+								margin-top:37px;
+							}
+			
+
+
+				.teddy3{
+					width:1400px;
+					height:400px;
+					float:left;
+					background:#F8F7F5;
+					margin:25px 50px;
+				}
+					.teddy31{
+						width:696px;
+						height:396px;
+						float:left;
+						background:#F8F7F5;
+						border:solid 2px #B1A299;
+						border-right:none;
+					}
+					.teddy32{
+						width:700px;
+						height:430px;
+						float:left;
+						background:#F8F7F5;
+						margin-top:-17px;
+					}
+						.teddy31 h1{
+							font:normal 30px 'Ephesis', cursive;
+							padding:30px 50px ;
+							color:#002147;
+						}
+						.teddy31 p{
+							font:normal 15px arial;
+							padding:30px 50px;
+						}
+						#watch{
+							width:200px;
+							height:40px;
+							background:yellow;
+							margin:50px;
+							transition:transform 8s  ease;
+						}
+							#watch a:link,#watch a:visited{
+								text-decoration:none;
+								color:white;
+								display:block;
+								background:#002147;
+								padding:12px 25px;
+								font:normal 15px arial;
+							transition:all 1s;
+							}
+							#watch a:hover{
+								color:#002147;
+								background:white;
+							}
+						
+						#watch i{
+							color:white;
+							transition:all 1s;
+						}
+						#watch:hover i{
+							color:#002147;
+							transform:translate(10px,0);
+						}
+			#contactarea{
+				width:1500px;
+				height:850px;
+				float:left;
+				background:#F8F7F5;
+			}
+			
+				#contactarea1{
+					width:1500px;
+					height:60px;
+					float:left;
+					margin:40px 0px;
+				}
+					#contactarea1a{
+						width:555px;
+						height:2px;
+						float:left;
+						margin:30px 0 25px 45px;
+						background:linear-gradient(to right,transparent 0%,#002147 );
+					}
+					#contactarea1b{
+						width:280px;
+						height:60px;
+						float:left;
+					}
+						#contactarea1b h1{
+							font:normal 35px 'Ephesis', cursive;
+							color:#002147;
+							margin:5px;
+							text-align:center;
+						}
+					#contactarea1c{
+						width:555px;
+						height:2px;
+						float:left;
+						margin:30px 45px 25px 0;
+						background:linear-gradient(to left,transparent 0%,#002147 );
+					}
+				.contact1a{
+					width:730px;
+					height:600px;
+					margin:25px 0;
+					float:left;
+				}
+						.contact1a h1{
+							margin:15px 125px;
+							font:normal 30px arial;
+							color:#002147;
+						}
+						.contact1a i{
+							margin-right:20px;
+							font-size:30px ;
+						}
+						.contact1a ul{
+							list-style:none;
+							margin:0;
+							padding:0;
+						}
+						.contact1a ul li{
+							padding:20px 30px;
+							border:solid 1px #E6E6E6;
+							font:normal 20px arial;
+							margin:30px 50px 0 130px;
+							
+						}
+					#maparea{
+						width:550px;
+						height:450px;
+						float:left;
+						margin:25px  130px 0 50px;
+					}		
+					
+			#footerarea{
+				width:1500px;
+				height:500px;
+				background:#002147;
+				float:left;
+				
+			}		
+				#footerarea {
+					opacity:1;
+				}				
+				#footerarea h1{
+					font:bold 30px arial;
+					color:white;
+					margin:70px 10px 30px 100px;
+					padding:0 15px;
+					border-left:solid 5px white;
+				}
+				#sfoottl{
+					width:0px;
+					height:0px;
+					float:left;
+					padding:0px;
+					margin:-25px 0 -55px 10;
+					border-top:solid 26px transparent;
+					border-right:solid 26px black;
+					border-left:solid 26px transparent;
+				}
+				#sfootr{
+					width:150px;
+					height:50px;
+					background:black;
+					float:left;
+					margin:-24.8px 0 0 60px;
+				}
+					#sfootr p{
+						font-family: 'Ephesis', cursive;
+						color:#F8F7F5;
+						margin:10px 20px;
+						margin-right:none;
+						font-size:20px;
+					}
+					.footspace{
+						width:80px;
+						height:300px;
+						float:left;
+						margin:10px 10px;
+					}
+					.foot{
+						width:300px;
+						height:300px;
+						float:left;
+						margin:10px 10px;
+					}
+						.foot ul{
+							list-style-type:none;
+							margin:0;
+							padding:0;
+						}
+						.foot ul li a:link,.foot ul li a:visited{
+							text-decoration:none;
+							color:white;
+							display:block;
+							padding:10px;
+							font:normal 14px arial;
+							transition:all 1s;
+						}
+						.foot ul li a:hover{
+							color:yellow;
+							display:block;
+							transform:translate(20px,0);
+						}
+
+					#socal{
+						width:400px;
+						height:300px;
+						float:left;
+						margin:0px 20px;
+					}		
+								
+						#socal h2{
+							font:bold 30px arial;
+							color:white;
+							padding:0 15px;
+							border-left:solid 5px white;
+						}
+						#socal p{
+							color:white;
+							font:normal 18px arial;
+							padding:0px 60px 0 20px;
+						}
+						#socal a:link,#socal a:visited{
+							text-decoration:none;
+							color:white;
+							display:block;
+							padding:0 40px 0 20px;
+							font:normal 20px arial;
+						}
+						#socal a:hover{
+							color:red;
+						}
+						#socal ul{
+							padding:0;
+							margin:0;
+							list-style:none;
+						}
+						#socal ul li a:link,#socal ul li a:visited{
+							float:left;
+							font-size:45px;
+							color:#6D767A;
+							padding:10px;
+							border:solid 1px white;
+							margin:50px 15px;
+							display:block;
+							box-shadow: -1px 1px 12px 4px rgba(246,241,241,0.75);
+						}
+					#linearea1{
+						width:700px;
+						height:1px;
+						float:left;
+						margin-top:10px;
+						margin-left:50px;
+						background:linear-gradient(to right,transparent 0%,#F8F7F5 );
+					}
+					#linearea2{
+						width:700px;
+						height:1px;
+						float:left;
+						margin-top:10px;
+						margin-right:50px;
+						background:linear-gradient(to left,transparent 0%,#F8F7F5 );
+					}
+					#namearea{
+						width:1500px;
+						height:60px;
+						float:left;
+						background:#002147;
+					}
+						#namearea ul{
+							margin:0;
+							padding:0;
+							list-style:none;
+						}
+						#namearea ul li{
+							color:white;
+							font:normal 17px arial;
+							float:left;
+							padding:20 225px;
+						}
+
+
+			
+			#rmenu{
+				position:fixed;
+				right:0;
+				top:225px;
+				width:50px;
+				height:225px;
+				z-index:1000;
+			}
+				#rmenu ul{
+					list-style:none;
+					padding:0;
+					margin:0;
+
+				}
+				#rmenu ul li a:link,#rmenu ul li a:visited{
+					display:block;
+					padding:10px 0 10px 15px;
+					font-size:25px;
+					transition:all 1s;
+					text-shadow: 1px 3px 2px rgba(0,0,0,0.6);
+				}
+				#rmenu ul li a:hover{
+					transform:translate(-25px,0);
+				}
+				
+				.rdetails{
+					color:white;
+					position:absolute;
+					right:50px;
+					top:3px;
+					display:block;
+					padding:8px 15px;
+					margin-right:10px;
+					background:#002147;
+					font:normal 17px arial;
+					display:none;
+				}
+				#rmenu:hover .rdetails{
+				}
+				
+
+		</style>
+		<link rel="stylesheet" type="text/css" href="animate.css"/>
+	</head>
+	<body>
+		<div id="mainarea">
+
+		<div id="rmenu">
+			<ul>
+				<li>
+					<a href="#">
+						<font color="#0863F7"><i class="fa fa-facebook" aria-hidden="true"></i></font>
+						<div class="rdetails">
+							Facebook
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<font color="#A437E9"><i class="fa fa-instagram" aria-hidden="true"></i></font>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<font color="#30D14F"><i class="fa fa-whatsapp" aria-hidden="true"></i></font>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<font color="#0073B1"><i class="fa fa-linkedin" aria-hidden="true"></i></font>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<font color="#F70101"><i class="fa fa-youtube-play" aria-hidden="true"></i></font>
+					</a>
+				</li>
+			</ul>
+		</div>
+
+
+		<div id="toparea">
+			<div id="logo">
+				<div id="logo1">
+					<img src="wiki.png" />
+				</div>
+				<div id="logo2">
+					OXFORD
+					UNIVERSITY 
+					<hr color="#EC0578" width="220px" size="3px" align="left"/>
+				</div>
+			</div>
+			<div id="contact">
+				<ul >
+					<li>Admission Helpline
+					<br>
+					<a href="tel:8103557569">8103557569</a>
+					<br>
+					<a href="tel:"9846748474">9846748474</a>
+					</li>	
+					<li>24&times7 Helpline</a>
+					<br>
+					<a href="tel:1234567900">1234567900</a>
+					<br>
+					<a href="tel:1234567890">1234567890</a>
+					</li>
+					<li>
+
+					<a href="https://wa.me/672666890"><img src="whatsapp.gif" height="30px" width="30px"/></a>
+					<br>
+					<a href="https://wa.me/672666890">81928464758</a></li>
+				</ul>
+			</div>
+			<div id="title">
+				<ul>
+					<li><a href="#">ADMISSION  BROCHURE 2023</a></li>
+					<li><a href="#">APPLY ONLINE</a></li>
+					<li><a href="#">ONLINE ENQUIRY</a></li>
+					<li><a href="#">CAMPUS TOUR</a></li>
+					<li><a href="#">APPLY ONLINE</a></li>
+				</ul>
+			</div>
+		</div>
+
+		<div id="m1">
+			<div id="menuarea1">
+				<ul>
+					<li> <a href="notice.html">NOTICE</a></li>
+					<li> <a href="#">FEE PAYMENT</a></li>
+					<li> <a href="#">PHOTO GALLERY</a></li>
+					<li> <a href="#">FESTS & FUNCTION</a></li>
+					<li> <a href="#">INFRASTRUCTURE</a></li>
+					<li> <a href="#connect">CONTACT US</a></li>
+				</ul>
+			</div>
+		</div>
+
+		<div id="m2">
+			<div id="menuarea2">
+				<ul>
+					<li> <a href="index.html"><i class="fa fa-home" aria-hidden="true"></i>	 HOME</a></li>
+					<li> <a href="#">ABOUT US</a></li>
+					<li> <a href="#sandp">SCHOOL & PROGRAMMES</a></li>
+					<li> <a href="#">ACADEMICS</a></li>
+					<li> <a href="#">ADMISSION</a></li>
+					<li> <a href="#">CAMPUS LIFE</a></li>
+					<li> <a href="#">PLACEMENT</a></li>
+					<li> <a href="#">CAREER</a></li>
+				</ul>
+			</div>
+		</div>
+		<div id="picarea">
+				<img src="oxford.jpg"/>
+				
+		</div>
+		<div id="slidearea">
+			<div id="lslide1">
+				<h2>Latest News</h2>
+			</div>
+			<div id="lslide2">
+				<marquee scrollamount="5" onmouseover="this.stop()" onmouseout="this.start()">
+					<ul>
+						<li><a href="#">Fees Payment Link - Click here </a></li>
+						<li><a href="#">Phase V AJU CET Notification 2023 </a></li>
+						<li><a href="#"> Reopening of University </a></li>
+						<li><a href="#">Covid-19 Update </a></li>
+						<li><a href="#">Important Notice - 5th Phase Counselling 2023</a></li>
+					</ul>
+				</marquee>
+			</div>
+		</div>
+		<div id="program">
+			<div id="p1">
+				<div id="p1a">
+				</div>
+				<div id="p1b">
+				<h1 align="center">STUDY HERE</h1>
+				</div>
+				<div id="p1c">
+				</div>
+			</div>
+			<div id="p11">
+				<p align="center">OXFORD offers 7 Undergraduate ( B.Tech. , BBA, and BCA), 2 Postgraduate ( M.Tech., and MCA) and 4 Diploma Programs (CE, EE, ME and EEE).</p>
+			</div>
+			<div id="p2">
+				<ul>
+					<li><a href="under.html" target="op">Under Graduation</a></li>
+					<li><a href="post.html" target="op">Post Graduation</a></li>
+					<li><a href="diploma.html" target="op">Diploma</a></li>
+				</ul>
+			</div>
+			<div id="p3">
+				<iframe src="under.html" width="100%" height="100%" name="op">
+
+				</iframe>
+			</div>
+
+		</div>
+		<div id="facilityarea">
+			<div id="farea1">
+				<div id="farea1a">
+				</div>
+				<div id="farea1b">
+					<h1 align="center">Our Facilities</h1>
+				</div>
+				<div id="farea1c">
+				</div>
+				
+			</div>
+			<div class="farea2">
+				<div class="farea21 wow fadeInLeft" data-wow-delay="0.1s" style="visibility: visible; -webkit-animation-delay: 0.1s; -moz-animation-delay: 0.1s; animation-delay: 0.1s;">
+					<div class="pic">
+						<a href="#"><img src="auditorim.jpg"/></a>
+						<div class="pdetail">
+							<a href=".">
+								<i class="fa fa-link" aria-hidden="true"></i>
+							</a>
+						</div>
+					</div>
+					<div class="word">
+						<h1 align="center"><a href="#">Knowledge Resource Centre</a></h1>
+					</div>
+				</div>
+				<div class="farea21 wow fadeInLeft" data-wow-delay="0.3s" style="visibility: visible; -webkit-animation-delay: 0.3s; -moz-animation-delay: 0.3s; animation-delay: 0.3s;">
+					<div class="pic">
+						<a href="#"><img src="gym.jpg"/></a>
+						<div class="pdetail">
+							<a href=".">
+								<i class="fa fa-link" aria-hidden="true"></i>
+							</a>
+						</div>
+					</div>
+					<div class="word">
+						<h1 align="center"><a href="#">Gym Centre</a></h1>
+					</div>
+				</div>
+				<div class="farea21 wow fadeInLeft" data-wow-delay="0.6s" style="visibility: visible; -webkit-animation-delay: 0.6s; -moz-animation-delay: 0.6s; animation-delay: 0.6s;">
+					<div class="pic">
+						<a href="#"><img src="hostel.jpeg"/></a>
+						<div class="pdetail">
+							<a href=".">
+								<i class="fa fa-link" aria-hidden="true"></i>
+							</a>
+						</div>
+					</div>
+					<div class="word">
+						<h1 align="center"><a href="#">Hostel </a></h1>
+					</div>
+				</div>
+				<div class="farea21 wow fadeInLeft" data-wow-delay="0.9s" style="visibility: visible; -webkit-animation-delay: 0.9s; -moz-animation-delay: 0.9s; animation-delay: 0.9s;">
+					<div class="pic">
+						<a href="#"><img src="virtual.jpg"/></a>
+						<div class="pdetail">
+							<a href=".">
+								<i class="fa fa-link" aria-hidden="true"></i>
+							</a>
+						</div>
+					</div>
+					<div class="word">
+						<h1 align="center"><a href="#">Virtual Classrooms</a></h1>
+					</div>
+				</div>
+			</div>
+
+
+			<div class="farea2">
+				<div class="farea21 wow fadeInRight" data-wow-delay="0.1s" style="visibility: visible; -webkit-animation-delay: 0.1s; -moz-animation-delay: 0.1s; animation-delay: 0.1s;">
+					<div class="pic">
+						<a href="#"><img src="guest.png"/></a>
+						<div class="pdetail">
+							<a href=".">
+								<i class="fa fa-link" aria-hidden="true"></i>
+							</a>
+						</div>
+					</div>
+					<div class="word">
+						<h1 align="center"><a href="#">Guest House</a></h1>
+					</div>
+				</div>
+				<div class="farea21 wow fadeInRight" data-wow-delay="0.3s" style="visibility: visible; -webkit-animation-delay: 0.3s; -moz-animation-delay: 0.3s; animation-delay: 0.3s;">
+					<div class="pic">
+						<a href="#"><img src="sport.jpeg"/></a>
+						<div class="pdetail">
+							<a href=".">
+								<i class="fa fa-link" aria-hidden="true"></i>
+							</a>
+						</div>
+					</div>
+					<div class="word">
+						<h1 align="center"><a href="#">Sports Complex</a></h1>
+					</div>
+				</div>
+				<div class="farea21 wow fadeInRight" data-wow-delay="0.6s" style="visibility: visible; -webkit-animation-delay: 0.6s; -moz-animation-delay: 0.6s; animation-delay: 0.6s;">
+					<div class="pic">
+						<a href="#"><img src="cafetaria.jpeg"/></a>
+						<div class="pdetail">
+							<a href=".">
+								<i class="fa fa-link" aria-hidden="true"></i>
+							</a>
+						</div>
+					</div>
+					<div class="word">
+						<h1 align="center"><a href="#">Cafetaria</a></h1>
+					</div>
+				</div>
+				<div class="farea21 wow fadeInRight" data-wow-delay="0.9s" style="visibility: visible; -webkit-animation-delay: 0.9s; -moz-animation-delay: 0.9s; animation-delay: 0.9s;">
+					<div class="pic">
+						<a href="#"><img src="region.jpeg"/></a>
+						<div class="pdetail">
+							<a href=".">
+								<i class="fa fa-link" aria-hidden="true"></i>
+							</a>
+						</div>
+					</div>
+					<div class="word">
+						<h1 align="center"><a href="#">Campus Regions</a></h1>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		
+		<div id="extraarea">
+			<div id="extraarea1">
+				<div id="extraarea1a">
+				</div>
+				<div id="extraarea1b">
+				<h1 align="center" id="sandp">INSTITUTES / SCHOOLS AT OXFORD UNIVERSITY</h1>
+				</div>
+				<div id="extraarea1c">
+				</div>
+			</div>
+			<div class="extraarea2">
+				<div class="extra1 wow fadeInUp" data-wow-delay="0.1s" style="visibility: visible; -webkit-animation-delay: 0.1s; -moz-animation-delay: 0.1s; animation-delay: 0.1s;">
+					<img src="commerce.jpeg"/>
+					<div class="edetails">
+						<h4>School of Commerce And...</h4>
+						<p>The march of business management into the technology age continues at </p>
+						<a href=".">Read more</a>
+					</div>
+				</div>
+				<div class="extra1 wow fadeInUp" data-wow-delay="0.3s" style="visibility: visible; -webkit-animation-delay: 0.3s; -moz-animation-delay: 0.3s; animation-delay: 0.3s;">
+					<img src="law.jpg"/>
+					<div class="edetails">
+						<h4>School of Law</h4>
+						<p>The march of business management into the technology age continues at </p>
+						<a href=".">Read more</a>
+					</div> 
+				</div>
+				<div class="extra1 wow fadeInUp" data-wow-delay="0.6s" style="visibility: visible; -webkit-animation-delay: 0.6s; -moz-animation-delay: 0.6s; animation-delay: 0.6s;">
+					<img src="it.jpg" /> 
+					<div class="edetails">
+						<h4>School of Engineering and IT</h4>
+						<p>The march of business management into the technology age continues at </p>
+						<a href=".">Read more</a>
+					</div>
+				</div>
+			</div>
+
+
+			<div class="extraarea2">
+				<div class="extra1 wow fadeInUp" data-wow-delay="0.1s" style="visibility: visible; -webkit-animation-delay: 0.1s; -moz-animation-delay: 0.1s; animation-delay: 0.1s;">
+					<img src="schoolofarts.jpg"/>
+					<div class="edetails">
+						<h4>School of Humanities </h4>
+						<p>The march of business management into the technology age continues at </p>
+						<a href=".">Read more</a>
+					</div>
+				</div>
+				<div class="extra1 wow fadeInUp" data-wow-delay="0.3s" style="visibility: visible; -webkit-animation-delay: 0.3s; -moz-animation-delay: 0.3s; animation-delay: 0.3s;">
+					<img src="bio.jpg"/>
+					<div class="edetails">
+						<h4>School of Health & Allied S...</h4>
+						<p>The march of business management into the technology age continues at </p>
+						<a href=".">Read more</a>
+					</div>
+				</div>
+				<div class="extra1 wow fadeInUp" data-wow-delay="0.6s" style="visibility: visible; -webkit-animation-delay: 0.6s; -moz-animation-delay: 0.6s; animation-delay: 0.6s;">
+					<img src="research.jpeg" /> 
+					<div class="edetails">
+						<h4>School of Research</h4>
+						<p>The march of business management into the technology age continues at </p>
+						<a href=".">Read more</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="activityarea">
+			<div id="activity1">
+				<div id="activity1a">		
+				</div>
+				<div id="activity1b">
+				<h1 align="center">ACTIVITIES</h1>			
+				</div>
+				<div id="activity1c">			
+				</div>
+			</div>
+			<div id="activity2">
+				<div class="active">
+					<div class="topactivity">
+						<p><a href=".">COMMUNITY ACTIVITIES</a></p>
+					</div>
+					<a href="."><div class="imgactivity">
+						<img src="community.jpeg"/>
+					</div></a>
+					<div class="textactivity">
+						<h3>EARCH Hall raises £6.7m to date for Norham St Edmund..</h3>
+						<p>1 Dec 2023</p>
+						<a href="https://www.seh.ox.ac.uk/news/hall-raises-6-7m-so-far-for-noham-st-edmund">VIEW ARTICAL <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+					</div>
+					<div class="topactivity">
+						<p><a href=".">COMMUNITY ACTIVITIES</a></p>
+					</div>
+				</div>
+				<div class="active">
+					<div class="imgactivity">
+						<a href="."><img src="award.jpeg"/></a>
+					</div>
+					<div class="textactivity">
+						<h3>Hall student Lukas Lehner awarded ESRC Outstanding..</h3>
+						<p>1 Dec 2023</p>
+						<a href="https://www.seh.ox.ac.uk/news/hall-raises-6-7m-so-far-for-noham-st-edmund">VIEW ARTICAL <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+					</div>
+					<div class="topactivity">
+						<p><a href=".">AWAREDS & HONOURS</a></p>
+					</div>
+				</div>
+				<div class="active">
+					<div class="imgactivity">
+						<a href="."><img src="event.jpeg"/></a>
+					</div>
+					<div class="textactivity">
+						<h3>EARCH Hall raises £6.7m to date for Norham St Edmund..</h3>
+						<p>1 Dec 2023</p>
+						<a href="https://www.seh.ox.ac.uk/news/hall-raises-6-7m-so-far-for-noham-st-edmund">VIEW ARTICAL <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+					</div>
+					<div class="topactivity">
+						<p ><a href=".">EVENT HIGHLIGHT</a></p>
+					</div>
+				</div>
+			<div id="actarea">
+				<a href="#">All News &nbsp <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+			</div>
+			</div>
+		</div>
+		
+		<div id="teddyarea">
+			<div id="teddy1">
+				<div id="teddy1a">
+				</div>
+				<div id="teddy1b">
+					<h1 align="center">Why Teddy Hall?</h1>
+				</div>
+				<div id="teddy1c">
+				</div>
+			</div>
+			
+			<div class="teddy2 wow fadeInLeft" data-wow-delay="0.3s" style="visibility: visible; -webkit-animation-delay: 0.3s; -moz-animation-delay: 0.3s; animation-delay: 0.3s;">
+				<div class="teddy2a">
+					<img src="choose.jpg"/>
+				</div>
+				<div class="teddy2b">
+					<div class="over">
+					</div>
+					<div class="tdetail">
+						<h1>Why choose our college?</h1>
+						<p>Teddy Hall is a friendly and inclusive college located in the heart of Oxford.</p>
+						<a href=".">Find out more &nbsp<i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+						<div class="teddyside">
+						</div>
+					</div>
+					
+				</div>	
+			</div>
+			<div class="teddy2 wow fadeInRight" data-wow-delay="0.3s" style="visibility: visible; -webkit-animation-delay: 0.3s; -moz-animation-delay: 0.3s; animation-delay: 0.3s;">
+				<div class="teddy2a">
+					<img src="meet.webp"/>
+				</div>
+				<div class="teddy2b">
+					<div class="over">
+					</div>
+					<div class="tdetail">
+						<h1>Meet Our Students</h1>
+						<p>Find out about life at Teddy Hall directly from our students!</p>
+						<a href=".">Read Profiles &nbsp<i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+						<div class="teddyside">
+						</div>
+					</div>
+					
+				</div>	
+			</div>
+			
+			<div class="teddy3">
+				<div class="teddy31">
+					<h1>Tour of Teddy Hall</h1>
+					<p>Follow undergraduates Ellis and Verity around St Edmund Hall, affectionately known as Teddy Hall, for a first-hand glimpse of what makes Teddy Hall a brilliant place to live and study!</p>
+
+					<div id="watch">
+						<a href="https://youtu.be/zv4BBlo6iCI?si=WRbb9sK9x5UnTJTq">Watch the Video &nbsp<i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+					</div>
+				</div>
+				<div class="teddy32">
+				<iframe width="100%" height="100%" src="https://www.youtube.com/embed/zv4BBlo6iCI?si=Bk7UpbdEHv9RnnBJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>	
+				</div>
+			
+			</div>
+		</div>
+
+
+		<div id="contactarea" >
+			<div id="contactarea1">
+				<div id="contactarea1a">
+				</div>
+				<div id="contactarea1b">
+					<h1 id="connect">Contact Us</h1>
+				</div>
+				<div id="contactarea1c">
+				</div>
+
+				<div class="contact1a">
+					<h1>Fort Campus</h1>
+					<ul>
+						<li>
+							<i class="fa fa-map-marker"></i>
+							Mahatma Gandhi Road, Fort, Mumbai, Maharashtra 400032.
+						</li>
+						<li>
+							<i class="fa fa-phone"></i>
+							022 68320000
+						</li>
+					</ul>
+					<h1>Kalina Campus</h1>
+					<ul>
+						<li>
+							<i class="fa fa-map-marker"></i>
+							University of Mumbai,Vidya Nagari, Kalina, Santacruz East, Mumbai, Maharashtra 400098.
+						</li>
+						<li>
+							<i class="fa fa-phone"></i>
+							022 26543000
+						</li>
+					</ul>
+				</div>
+
+				<div class="contact1a">
+					<h1 align="center">Map </h1>
+				<div id="maparea">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7700.745431580889!2d-1.2492130271785038!3d51.76091274101192!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4876c6a9ef8c485b%3A0xd2ff1883a001afed!2sUniversity%20of%20Oxford!5e0!3m2!1sen!2sin!4v1701546720472!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+				</div>
+		</div>	
+
+
+		<div id="footerarea">
+			<div id="sfoottl">
+			</div>
+			<div id="sfootr">
+				<p>SONU RAJ</p>
+			</div>
+				<h1>Useful link</h1>
+			<div class="footspace">
+			</div>
+			<div class="foot">
+				<ul>
+					<li> <a href="#"><i class="fa fa-home" aria-hidden="true"></i>	 HOME</a></li>
+					<li> <a href="#">ABOUT US</a></li>
+					<li> <a href="#sandp">SCHOOL & PROGRAMMES</a></li>
+					<li> <a href="#">ACADEMICS</a></li>
+					<li> <a href="#">ADMISSION</a></li>
+					<li> <a href="#">CAMPUS LIFE</a></li>
+					<li> <a href="#">PLACEMENT</a></li>
+				</ul>
+			</div>
+			<div class="foot">
+				<ul>
+					<li> <a href="#">NOTICE</a></li>
+					<li> <a href="#">FEE PAYMENT</a></li>
+					<li> <a href="#">PHOTO GALLERY</a></li>
+					<li> <a href="#">FESTS & FUNCTION</a></li>
+					<li> <a href="#">INFRASTRUCTURE</a></li>
+					<li> <a href="#connect">CONTACT US</a></li>
+				</ul>
+			</div>
+			<div class="foot">
+				<ul>
+					<li><a href=".">Information Under RTI</a></li>
+					<li><a href=".">Information for RTS Act</a></li>
+					<li><a href=".">Telephone Directory</a></li>
+					<li><a href=".">National Portal of India</a></li>
+					<li><a href=".">UM – DAE C.E.B.S.</a></li>
+					<li><a href=".">Biometric Attendance</a></li>
+				</ul>
+			</div>
+			<div id="socal">
+				
+				<h2>Follow Us</h2>
+				<ul>
+					<li>
+						<a href="#">
+							<i class="fa fa-facebook-square" aria-hidden="true"></i>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<i class="fa fa-twitter-square" aria-hidden="true"></i>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<i class="fa fa-linkedin-square" aria-hidden="true"></i>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<i class="fa fa-youtube-square" aria-hidden="true"></i>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div id="linearea1">
+			</div>
+			<div id="linearea2">
+			</div>
+		</div>
+		<div id="namearea">
+			<ul>
+				<li>&copy Copyright Oxford University 2023</li>
+				<li>Design & Developed By :<font color="yellow" > Sonu Raj</font></li>
+			</ul>
+		</div>
+
+
+	     </div>
+    		<script src="wow.min.js"></script>
+   		 <script>
+   		  new WOW().init();
+   		 </script>	
+	</body>
+</html>
