@@ -1,0 +1,925 @@
+<html>
+	<head>
+		<title>notice</title>
+		<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css"/>
+
+		<style type="text/css">
+
+
+			body{
+				margin:0;
+				padding:0;
+
+			}
+			iframe{
+				border:none;
+			}
+				
+			#mainarea{
+				width:1500px;
+				height:1900px;
+				margin:0 auto;
+			}
+			#toparea{
+				width:1500px;
+				height:115px;
+				float:left;
+				background:white;
+			}
+				#logo{
+					width:390px;
+					height:115px;
+					float:left;
+					margin:0;
+				}
+					#logo1{
+						width:100px;
+						height:100px;
+						float:left;
+						margin:7px 10px;
+						overflow:hidden;
+
+					}
+					#logo1 img{
+						width:100%;
+						height:100%;
+						transition:transform 10s  ease;
+					}
+					#logo1 img:hover{
+						width:100%;
+						height:100%;
+						transform:rotate(720deg) ;
+					}
+					#logo2{
+						width:260px;
+						height:100px;
+						color:#F80F60;
+						text-shadow: 5px 1px 3px rgba(0,0,0,0.5);
+						font:bold 30px  'Ephesis', cursive;
+						float:left;
+						margin:0;
+						padding:7px 0;
+					}
+				#contact{
+					width:360px;
+					height:100px;
+					float:left;
+					margin:7.5px 0;
+				}
+					#contact ul{
+						list-style:none;
+						margin:0;
+						padding:0;
+					}
+					#contact ul li{
+						color:red;
+						float:left;
+						margin:20px 1px;
+						padding:3px 10px;
+						font :normal 13px 'Ephesis', cursive;
+						border-right:solid 2px #FA1A0B;
+						text-align:center;
+						}
+					#contact ul li:last-child{
+							border-right:none;
+						}
+
+					#contact ul li a:link,#contact ul li a:visited{
+						color:#002147;
+						font :normal 13px 'Ephesis', cursive;
+						text-decoration:none;
+						}
+					#contact ul li a:hover{
+						color:#099FA4;
+						border:dotted 1px #6D05EA;
+						text-decoration:none;
+						}
+				#title{
+					width:750px;
+					height:100px;
+					float:left;
+					margin:7.5px 0;
+				}
+
+					#title ul {
+						list-style:none;
+						margin:0;
+						padding:0;
+					}
+					#title ul li {
+						float:left;
+						margin:30px 10px;
+					}
+					#title ul li a:link,#title ul li a:visited{
+						font:bold 10px 'Ephesis', cursive;
+						text-decoration:none;
+						background:#002147;
+						color:white;
+						padding:15px;
+						display:block;
+						border-radius:15px;
+						border:solid 2px #002147;
+					}
+					#title ul li a:hover{
+						background:white;
+						color:#002147;
+						border:solid 2px #002147;
+					}
+
+			#m1{
+				width:1500px;
+				height:55px;
+				background:black;
+				float:left;
+				position:sticky;
+				top:0;
+				z-index:1000;
+			}
+				#menuarea1{
+					width:850px;
+					height:55px;
+					float:left;
+					margin:0 325px;
+				}
+					#menuarea1 ul{
+						list-style-type:none;
+						margin:0;
+						padding:0;
+					}
+					#menuarea1 ul li{
+						color:white;
+						float:left;
+						font:bold 13px arial;
+					}
+					#menuarea1 ul li a:link,#menuarea1 ul li a:visited{
+						text-decoration:none;
+						color:white;
+						padding:20px ;
+						display:block;
+					}
+					#menuarea1 ul li a:hover{
+						background:#F8F7F5;
+						border-radius:3px;
+						color:#F30433;
+					}
+			#m2{
+				width:1500px;
+				height:55px;
+				float:left;
+				background:white;
+			}
+				#menuarea2{
+					width:1000px;
+					height:55px;
+					margin:0 250px;
+					float:left;
+				}
+					#menuarea2 ul{
+						list-style-type:none;
+						margin:0;
+						padding:0;
+					}
+					#menuarea2 ul li{
+						float:left;
+						font:bold 13px arial;
+					}
+				
+					#menuarea2 ul li a:link,#menuarea2 ul li a:visited{
+						text-decoration:none;
+						color:black;
+						padding:20px;
+						display:block;
+					}
+					#menuarea2 ul li a:hover{
+						background:#002147;
+						border-radius:3px;
+						color:white;
+					}
+
+			#picarea{
+				width:1500px;
+				height:400px;
+				float:left;
+				position:relative;
+			}
+				#picarea img{
+					width:100%;
+					height:100%;
+					opacity:0.3;
+				}
+
+				.detail{
+					position:absolute;
+					color:#002147;
+					text-align:center;
+					width:100%;
+					bottom:200px;
+					font:bold 50px 'Ephesis', cursive;
+				}
+			
+			#noticearea{
+				width:1500px;
+				height:700px;
+				float:left;
+				background:#E1DCE3;
+			}
+				#notice1{
+					width:900px;
+					height:600px;
+					float:left;
+					margin:50px;
+					overflow-y:scroll;
+				}
+				#abc{
+					width:100%;
+					height:60px;
+					float:left;
+					position:sticky;
+					top:0;
+					background:#9EF0C2;
+					border:solid 1px #002147;
+				}
+				#noticeb{
+					width:250px;
+					height:0px;
+					float:left;
+					border-top:solid 60px #002147;
+					border-right:solid 60px transparent;
+					border-left:solid 60px transparent;
+					margin-left:250px;
+					position:relative;
+				}
+				.ndetail{
+					position:absolute;
+					bottom:10px;
+					width:100%;
+					color:white;
+					text-align:center;
+					font:normal 30px 'Ephesis', cursive;
+				}
+				#notice1 table img{
+					height:40px;
+					width:30px;
+				}
+				#notice1 table{
+					width:100%;
+					border-collapse:collapse;
+					background:#FAFAD2;
+				}
+				#notice1 table ,#notice1 table tr td{
+					font:normal 15px arial;
+				}
+				#notice1 table tr th{
+					font:bold 18px arial;
+					color:red;
+				}
+				#notice1 table tr:hover{
+					background:#E5DEF0;
+				}
+				#notice2{
+					width:400px;
+					height:400px;
+					float:left;
+					margin:130px 0 0 20px;
+					border: 20px ridge #002147;
+				}
+				#notice2 ul{
+					list-style:none;
+					margin:0;
+					padding:0;
+				}
+				#notice2 ul li{
+					color:#002147;
+					font:bold 20px arial;
+				}
+				#notice2 ul li{
+					color:#002147;
+					font:bold 20px arial;
+					
+				}
+				#notice2 ul li:nth-child(1){
+					padding:30px 0 20 30px;
+				}
+
+				#notice2 ul li:nth-child(6){
+					padding:30px 0 20 30px;
+				}
+
+				#notice2 ul li a:link,#notice2 ul li a:visited{
+					color:black;
+					font:bold 16px arial;
+					padding-left:50px;
+					text-decoration:none;
+				}
+				#notice2 ul li a:hover{
+					text-decoration:underline;
+				}		
+					
+			#footerarea{
+				width:1500px;
+				height:500px;
+				background:#002147;
+				float:left;
+				
+			}		
+				#footerarea {
+					opacity:1;
+				}				
+				#footerarea h1{
+					font:bold 30px arial;
+					color:white;
+					margin:70px 10px 30px 100px;
+					padding:0 15px;
+					border-left:solid 5px white;
+				}
+				#sfoottl{
+					width:0px;
+					height:0px;
+					float:left;
+					padding:0px;
+					margin:-25px 0 -55px 10;
+					border-top:solid 26px transparent;
+					border-right:solid 26px black;
+					border-left:solid 26px transparent;
+				}
+				#sfootr{
+					width:150px;
+					height:50px;
+					background:black;
+					float:left;
+					margin:-24.8px 0 0 60px;
+				}
+					#sfootr p{
+						font-family: 'Ephesis', cursive;
+						color:#F8F7F5;
+						margin:10px 20px;
+						margin-right:none;
+						font-size:20px;
+					}
+					.footspace{
+						width:80px;
+						height:300px;
+						float:left;
+						margin:10px 10px;
+					}
+					.foot{
+						width:300px;
+						height:300px;
+						float:left;
+						margin:10px 10px;
+					}
+						.foot ul{
+							list-style-type:none;
+							margin:0;
+							padding:0;
+						}
+						.foot ul li a:link,.foot ul li a:visited{
+							text-decoration:none;
+							color:white;
+							display:block;
+							padding:10px;
+							font:normal 14px arial;
+							transition:all 1s;
+						}
+						.foot ul li a:hover{
+							color:yellow;
+							display:block;
+							transform:translate(20px,0);
+						}
+
+					#socal{
+						width:400px;
+						height:300px;
+						float:left;
+						margin:0px 20px;
+					}		
+								
+						#socal h2{
+							font:bold 30px arial;
+							color:white;
+							padding:0 15px;
+							border-left:solid 5px white;
+						}
+						#socal p{
+							color:white;
+							font:normal 18px arial;
+							padding:0px 60px 0 20px;
+						}
+						#socal a:link,#socal a:visited{
+							text-decoration:none;
+							color:white;
+							display:block;
+							padding:0 40px 0 20px;
+							font:normal 20px arial;
+						}
+						#socal a:hover{
+							color:red;
+						}
+						#socal ul{
+							padding:0;
+							margin:0;
+							list-style:none;
+						}
+						#socal ul li a:link,#socal ul li a:visited{
+							float:left;
+							font-size:45px;
+							color:#6D767A;
+							padding:5px;
+							border:solid 1px white;
+							margin:50px 15px;
+							display:block;
+							text-shadow: 5px 6px 6px rgba(0,0,0,1);
+						}
+					#linearea1{
+						width:700px;
+						height:1px;
+						float:left;
+						margin-top:10px;
+						margin-left:50px;
+						background:linear-gradient(to right,transparent 0%,#F8F7F5 );
+					}
+					#linearea2{
+						width:700px;
+						height:1px;
+						float:left;
+						margin-top:10px;
+						margin-right:50px;
+						background:linear-gradient(to left,transparent 0%,#F8F7F5 );
+					}
+					#namearea{
+						width:1500px;
+						height:60px;
+						float:left;
+						background:#002147;
+					}
+						#namearea ul{
+							margin:0;
+							padding:0;
+							list-style:none;
+						}
+						#namearea ul li{
+							color:white;
+							font:normal 17px arial;
+							float:left;
+							padding:20 225px;
+						}
+
+
+			
+			#rmenu{
+				position:fixed;
+				left:0;
+				top:225px;
+				width:50px;
+				height:225px;
+				z-index:1000;
+			}
+				#rmenu ul{
+					list-style:none;
+					padding:0;
+					margin:0;
+
+				}
+				#rmenu ul li a:link,#rmenu ul li a:visited{
+					display:block;
+					padding:10px 15px;
+					font-size:25px;
+					transition:all 1s;
+					text-shadow: 5px 6px 6px rgba(0,0,0,1);
+				}
+				#rmenu ul li a:hover{
+					transform:translate(10px,0);
+				}
+				
+				.rdetails{
+					position:absolute;
+					left:50px;
+					top:8px;
+					display:block;
+					padding:8px 15px;
+					margin-left:10px;
+					background:rgba(2,0,0,0.6);
+					color:yellow;
+					font:normal 14px 'Ephesis', cursive;
+					transition:all 1s;
+					display:none;
+					border-radius:5px;
+				}
+				#rmenu ul li a:hover .rdetails{
+					display:block;
+					animation-name:aar;
+					animation-duration:1s;
+				}
+				
+				.trangle{
+					width:0px;
+					height:0px;
+					float:left;
+					border-top:solid 12px transparent;
+					border-bottom:solid 12px transparent;
+					border-right:solid 12px rgba(2,0,0,0.6);
+					position:absolute;
+					left:49px;
+					top:13px;
+					display:none;
+				}
+					
+				@keyframes aar{
+					0%{
+						transform:translateX(-10px);
+
+					}
+					100%{
+						transform:translateX(10px);
+					}
+				}
+				#rmenu ul li a:hover .trangle{
+					display:block;
+					animation-name:aar;
+					animation-duration:1s;
+
+				}
+		</style>
+		<link rel="stylesheet" type="text/css" href="animate.css"/>
+	</head>
+	<body>
+		<div id="mainarea">
+
+		<div id="rmenu">
+			<ul>
+				<li>
+					<a href="#">
+						<font color="#0863F7"><i class="fa fa-facebook" aria-hidden="true"></i></font>
+						<div class="trangle">
+						</div>
+						<div class="rdetails">
+							Facebook
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<font color="#A437E9"><i class="fa fa-instagram" aria-hidden="true"></i></font>
+						<div class="trangle">
+						</div>
+						<div class="rdetails">
+							Instagram
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<font color="#30D14F"><i class="fa fa-whatsapp" aria-hidden="true"></i></font>
+						<div class="trangle">
+						</div>
+						<div class="rdetails">
+							Whatsapp
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<font color="#0073B1"><i class="fa fa-linkedin" aria-hidden="true"></i></font>
+						<div class="trangle">
+						</div>
+						<div class="rdetails">
+							Linkedin
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<font color="#F70101"><i class="fa fa-youtube-play" aria-hidden="true"></i></font>
+						<div class="trangle">
+						</div>
+						<div class="rdetails">
+							Youtube
+						</div>
+					</a>
+				</li>
+			</ul>
+		</div>
+
+
+		<div id="toparea">
+			<div id="logo">
+				<div id="logo1">
+					<img src="project/wiki.png" />
+				</div>
+				<div id="logo2">
+					OXFORD
+					UNIVERSITY 
+					<hr color="#EC0578" width="220px" size="3px" align="left"/>
+				</div>
+			</div>
+			<div id="contact">
+				<ul >
+					<li>Admission Helpline
+					<br>
+					<a href="tel:8103557569">8103557569</a>
+					<br>
+					<a href="tel:"9846748474">9846748474</a>
+					</li>	
+					<li>24&times7 Helpline</a>
+					<br>
+					<a href="tel:1234567900">1234567900</a>
+					<br>
+					<a href="tel:1234567890">1234567890</a>
+					</li>
+					<li>
+
+					<a href="https://wa.me/672666890"><img src="whatsapp.gif" height="30px" width="30px"/></a>
+					<br>
+					<a href="https://wa.me/672666890">81928464758</a></li>
+				</ul>
+			</div>
+			<div id="title">
+				<ul>
+					<li><a href="#">ADMISSION  BROCHURE 2023</a></li>
+					<li><a href="#">APPLY ONLINE</a></li>
+					<li><a href="#">ONLINE ENQUIRY</a></li>
+					<li><a href="#">CAMPUS TOUR</a></li>
+					<li><a href="#">APPLY ONLINE</a></li>
+				</ul>
+			</div>
+		</div>
+
+		<div id="m1">
+			<div id="menuarea1">
+				<ul>
+					<li> <a href="#">NOTICE</a></li>
+					<li> <a href="#">FEE PAYMENT</a></li>
+					<li> <a href="#">PHOTO GALLERY</a></li>
+					<li> <a href="#">FESTS & FUNCTION</a></li>
+					<li> <a href="#">INFRASTRUCTURE</a></li>
+					<li> <a href="#connect">CONTACT US</a></li>
+				</ul>
+			</div>
+		</div>
+
+		<div id="m2">
+			<div id="menuarea2">
+				<ul>
+					<li> <a href="index.html"><i class="fa fa-home" aria-hidden="true"></i>	 HOME</a></li>
+					<li> <a href="#">ABOUT US</a></li>
+					<li> <a href="#sandp">SCHOOL & PROGRAMMES</a></li>
+					<li> <a href="#">ACADEMICS</a></li>
+					<li> <a href="#">ADMISSION</a></li>
+					<li> <a href="#">CAMPUS LIFE</a></li>
+					<li> <a href="#">PLACEMENT</a></li>
+					<li> <a href="#">CAREER</a></li>
+				</ul>
+			</div>
+		</div>
+
+		<div id="picarea">
+			<img src="notice.jpg"/>
+			<div class="detail">
+				General Notice
+			</div>
+		</div>
+
+		<div id="noticearea">
+			<div id="notice1">
+				<div id="abc">
+					<div id="noticeb">
+						<div class="ndetail">
+							Notice Board
+						</div>
+					</div>
+				</div>
+			
+			
+			<table cellpadding="5px">
+				<tr>
+					<th>S.No</th>
+					<th>Date</th>
+					<th>Notice</th>
+					<th>PDF</th>
+				</tr>
+				<tr>
+					
+
+				</tr>
+				<tr>
+					<td>1</td>
+					<td>07.12.2023</td>
+					<td>Related to Fee Payment for 4th Semester (Except B. Pharm, B. Tech & Polytechnic), 6th Semester (Except B. Pharm), 8th Semester & lOth Semester.</td>
+					<td><a href="notice/n1.pdf"><img src="pdf.png"/></a></td>
+				</tr>
+				
+				<tr>
+					<td>2</td>
+					<td>15.11.2023</td>
+					<td>Related to extended the last date to fill up the Scholarship Form.</td>
+					<td><a href="notice/n2.pdf"><img src="pdf.png"/></a></td>
+				</tr>
+				<tr>
+					<td>3</td>
+					<td>15.11.2023</td>
+					<td>Related to closure of Hostel & Hostel Mess on the Occasion of Diwali, Bhai Dooj and Chhath.</td>
+					<td><a href="notice/n3.pdf"><img src="pdf.png"/></a></td>
+				</tr>
+				<tr>
+					<td>4</td>
+					<td>15.11.2023</td>
+					<td>Related to closure of Hostel & Hostel Mess on the Occasion of Diwali, Bhai Dooj and Chhath.</td>
+					<td><a href="notice/n3.pdf"><img src="pdf.png"/></a></td>
+				</tr>
+				<tr>
+					<td>5</td>
+					<td>15.11.2023</td>
+					<td>Related to closure of Hostel & Hostel Mess on the Occasion of Diwali, Bhai Dooj and Chhath.</td>
+					<td><a href="notice/n3.pdf"><img src="pdf.png"/></a></td>
+				</tr>
+				<tr>
+					<td>6</td>
+					<td>15.11.2023</td>
+					<td>Related to closure of Hostel & Hostel Mess on the Occasion of Diwali, Bhai Dooj and Chhath.</td>
+					<td><a href="notice/n3.pdf"><img src="pdf.png"/></a></td>
+				</tr>
+				<tr>
+					<td>7</td>
+					<td>15.11.2023</td>
+					<td>Related to closure of Hostel & Hostel Mess on the Occasion of Diwali, Bhai Dooj and Chhath.</td>
+					<td><a href="notice/n3.pdf"><img src="pdf.png"/></a></td>
+				</tr>
+				<tr>
+					<td>8</td>
+					<td>15.11.2023</td>
+					<td>Related to closure of Hostel & Hostel Mess on the Occasion of Diwali, Bhai Dooj and Chhath.</td>
+					<td><a href="notice/n3.pdf"><img src="pdf.png"/></a></td>
+				</tr>
+				<tr>
+					<td>9</td>
+					<td>15.11.2023</td>
+					<td>Related to closure of Hostel & Hostel Mess on the Occasion of Diwali, Bhai Dooj and Chhath.</td>
+					<td><a href="notice/n3.pdf"><img src="pdf.png"/></a></td>
+				</tr>
+				<tr>
+					<td>10</td>
+					<td>15.11.2023</td>
+					<td>Related to closure of Hostel & Hostel Mess on the Occasion of Diwali, Bhai Dooj and Chhath.</td>
+					<td><a href="notice/n3.pdf"><img src="pdf.png"/></a></td>
+				</tr>
+				<tr>
+					<td>11</td>
+					<td>15.11.2023</td>
+					<td>Related to closure of Hostel & Hostel Mess on the Occasion of Diwali, Bhai Dooj and Chhath.</td>
+					<td><a href="notice/n3.pdf"><img src="pdf.png"/></a></td>
+				</tr>
+				<tr>
+					<td>12</td>
+					<td>15.11.2023</td>
+					<td>Related to closure of Hostel & Hostel Mess on the Occasion of Diwali, Bhai Dooj and Chhath.</td>
+					<td><a href="notice/n3.pdf"><img src="pdf.png"/></a></td>
+				</tr>
+				<tr>
+					<td>13</td>
+					<td>15.11.2023</td>
+					<td>Related to closure of Hostel & Hostel Mess on the Occasion of Diwali, Bhai Dooj and Chhath.</td>
+					<td><a href="notice/n3.pdf"><img src="pdf.png"/></a></td>
+				</tr>
+				<tr>
+					<td>14</td>
+					<td>15.11.2023</td>
+					<td>Related to closure of Hostel & Hostel Mess on the Occasion of Diwali, Bhai Dooj and Chhath.</td>
+					<td><a href="notice/n3.pdf"><img src="pdf.png"/></a></td>
+				</tr>
+				<tr>
+					<td>15</td>
+					<td>15.11.2023</td>
+					<td>Related to closure of Hostel & Hostel Mess on the Occasion of Diwali, Bhai Dooj and Chhath.</td>
+					<td><a href="notice/n3.pdf"><img src="pdf.png"/></a></td>
+				</tr>
+				<tr>
+					<td>16</td>
+					<td>15.11.2023</td>
+					<td>Related to closure of Hostel & Hostel Mess on the Occasion of Diwali, Bhai Dooj and Chhath.</td>
+					<td><a href="notice/n3.pdf"><img src="pdf.png"/></a></td>
+				</tr>
+				<tr>
+					<td>17</td>
+					<td>15.11.2023</td>
+					<td>Related to closure of Hostel & Hostel Mess on the Occasion of Diwali, Bhai Dooj and Chhath.</td>
+					<td><a href="notice/n3.pdf"><img src="pdf.png"/></a></td>
+				</tr>
+				<tr>
+					<td>18</td>
+					<td>15.11.2023</td>
+					<td>Related to closure of Hostel & Hostel Mess on the Occasion of Diwali, Bhai Dooj and Chhath.</td>
+					<td><a href="notice/n3.pdf"><img src="pdf.png"/></a></td>
+				</tr>
+				<tr>
+					<td>19</td>
+					<td>15.11.2023</td>
+					<td>Related to closure of Hostel & Hostel Mess on the Occasion of Diwali, Bhai Dooj and Chhath.</td>
+					<td><a href="notice/n3.pdf"><img src="pdf.png"/></a></td>
+				</tr>
+			</table>
+			</div>
+			<div id="notice2">
+				<ul>
+					<li>QUICK LINKS</li>
+					<li><a href="#">General Notice</a></li>
+					<li><a href="#">Fee Notice</a></li>
+					<li><a href="#">Departmental Notice</a></li>
+					<li><a href="#">Examination Notice</a></li>
+					<li>SCHOOLS & INSTITUTES</li>
+					<li><a href="#">School of Low</a></li>
+					<li><a href="#">School of Commerce</a></li>
+					<li><a href="#">School of Engineering and IT</a></li>
+					<li><a href="#">School of Humanities</a></li>
+					<li><a href="#">School of Research</a></li>
+					<li><a href="#">School of Health</a></li>
+				</ul>
+			</div>
+		</div>	
+
+
+		<div id="footerarea">
+			<div id="sfoottl">
+			</div>
+			<div id="sfootr">
+				<p>SONU RAJ</p>
+			</div>
+				<h1>Useful link</h1>
+			<div class="footspace">
+			</div>
+			<div class="foot">
+				<ul>
+					<li> <a href="index.html"><i class="fa fa-home" aria-hidden="true"></i>	 HOME</a></li>
+					<li> <a href="#">ABOUT US</a></li>
+					<li> <a href="#sandp">SCHOOL & PROGRAMMES</a></li>
+					<li> <a href="#">ACADEMICS</a></li>
+					<li> <a href="#">ADMISSION</a></li>
+					<li> <a href="#">CAMPUS LIFE</a></li>
+					<li> <a href="#">PLACEMENT</a></li>
+				</ul>
+			</div>
+			<div class="foot">
+				<ul>
+					<li> <a href="notice.html">NOTICE</a></li>
+					<li> <a href="#">FEE PAYMENT</a></li>
+					<li> <a href="#">PHOTO GALLERY</a></li>
+					<li> <a href="#">FESTS & FUNCTION</a></li>
+					<li> <a href="#">INFRASTRUCTURE</a></li>
+					<li> <a href="#connect">CONTACT US</a></li>
+				</ul>
+			</div>
+			<div class="foot">
+				<ul>
+					<li><a href=".">Information Under RTI</a></li>
+					<li><a href=".">Information for RTS Act</a></li>
+					<li><a href=".">Telephone Directory</a></li>
+					<li><a href=".">National Portal of India</a></li>
+					<li><a href=".">UM – DAE C.E.B.S.</a></li>
+					<li><a href=".">Biometric Attendance</a></li>
+				</ul>
+			</div>
+			<div id="socal">
+				
+				<h2>Follow Us</h2>
+				<ul>
+					<li>
+						<a href="#">
+							<i class="fa fa-facebook-square" aria-hidden="true"></i>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<i class="fa fa-twitter-square" aria-hidden="true"></i>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<i class="fa fa-linkedin-square" aria-hidden="true"></i>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<i class="fa fa-youtube-square" aria-hidden="true"></i>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div id="linearea1">
+			</div>
+			<div id="linearea2">
+			</div>
+		</div>
+		<div id="namearea">
+			<ul>
+				<li>&copy Copyright Oxford University 2023</li>
+				<li>Design & Developed By :<font color="yellow" > Sonu Raj</font></li>
+			</ul>
+		</div>
+
+
+	     </div>
+    		<script src="wow.min.js"></script>
+   		 <script>
+   		  new WOW().init();
+   		 </script>	
+	</body>
+</html>
